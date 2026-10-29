@@ -1,0 +1,83 @@
+\paragraph{What the routing changes mean.}
+The pre-specified primary test confirms on the held-out split: the medical model's
+median question dominance ratio is lower ($5.36 \to 4.15$, $p{=}0.006$; the mean does not
+move in that direction, see Section~\ref{sec:confirmation}), so relative to its
+language prior it leans less on the question text when it answers. The effect is
+\emph{small} (Cliff's $\delta{=}0.18$): reliable on fresh samples, but modest in
+size. It is also much smaller than the drop seen in an early 50-sample pilot that did not
+hold up; we frame it as a consistent small shift, not a dramatic rerouting. Alongside this, the
+confirmed candidates describe \emph{how} the decoder's behaviour changes rather than
+simply that it ``uses the image more'': the medical model commits to its first answer
+token with much lower entropy, produces smaller closed yes/no logit margins, and
+generates lower-probability (more hedged) answer prose; it also shows lower absolute information flow (IF AUC), though that effect survives
+only at the raw level after correction. Normalised by each model's answer probability,
+MedGemma's flow is about 0.6 times Gemma's in both pathways, so the reduction is general
+rather than specific to the image. The pathway-specific evidence is the question
+dominance ratio. Notably, the half-layer ``image enters later'' shift
+that looked robust on discovery (entry layer $11.0 \to 11.5$, $p_\text{Holm}{=}0.004$)
+\emph{did not replicate} on the confirmation split (median 11.0 for both, $p{=}0.43$);
+the pre-specified protocol is what lets us retract it cleanly rather than carry it as a finding.
+
+\paragraph{The central open problem: encoder vs.\ decoder.}
+MedGemma was adapted with a medical SigLIP vision encoder, and we confirm that the
+two encoders differ substantially (layer-0 image-feature linear CKA 0.155; mean
+cosine 0.33). The routing changes we measure in the decoder are therefore
+\emph{confounded}: they may reflect the decoder reading a different image
+representation, a genuinely re-routed decoder, or both. We attempted a correlational
+decomposition (regressing the per-sample grounding shift on per-sample encoder
+divergence), but it is uninformative here, because the per-sample encoder
+divergence is near-constant ($\approx 0.68$ for every sample), leaving no
+encoder-similar subset to contrast. We therefore make no causal attribution. The
+clean test is an \textbf{encoder swap} (grafting the base encoder onto the medical
+decoder and vice versa), which we pre-specify and pursue as dedicated follow-up work.
+
+\paragraph{Scope of the accuracy claim.}
+Accuracy is reported for closed-ended yes/no questions only, using the logit verdict
+P(yes) vs.\ P(no) at the first answer token. Open-ended questions are not evaluated:
+both models generate explanatory prose and, at \texttt{max\_new\_tokens=64}, the
+answer often does not appear before the cutoff. The closed-accuracy gap is
+underpowered on discovery (59 questions, $+18.6$ points, Fisher $p{=}0.050$ raw) but
+large and significant on the held-out split (77.2\% vs.\ 44.3\% on the forced-choice verdict,
+$p{=}3.9{\times}10^{-5}$). We are deliberately cautious about its size: the base model
+answers near a trivial baseline (at the always-``yes'' rate and below the majority
+class), so the model-vs-model difference overstates the medical model's true advantage.
+The claim we stand behind is that the medical model clears the majority-class baseline
+and the base model does not. Routing metrics do not depend on the answer text and are
+reported on all samples.
+
+\paragraph{Discovery vs.\ confirmation.}
+The two-split protocol earned its keep. The pre-specified primary test (QDR) was only
+borderline on discovery yet confirmed on the held-out split, while the entry-layer
+shift showed the opposite pattern: robust on discovery, absent on confirmation. Had
+we reported the discovery split alone, we would have published the entry-layer effect
+and hedged on the routing claim; the confirmation split reverses both calls. Reporting
+candidates and nulls alike, with raw and Holm-adjusted $p$-values, is a deliberate
+guard against the selective reporting that a small single-split study invites.
+
+\paragraph{Computational cost.}
+Each sample requires a full layer sweep per block type on top of a baseline pass. On
+Kaggle T4 GPUs (two per kernel, the free tier), a 100-sample discovery run across two block
+types took 5.1 h (Gemma) and 5.6 h (MedGemma) of kernel wall time, and each 150-sample
+confirmation run took 7.6 h, split over two GPUs. The method is suited to offline interpretability
+analysis rather than online inference.
+
+
+\paragraph{Limitations.}
+This is a single-author study on one benchmark with 250 samples: 100 for discovery and
+150 for confirmation. That leaves limited power for small effects, and the primary effect
+is small (Cliff's $\delta{=}0.18$). The protocol was written after the discovery analysis
+(Section~\ref{sec:hypotheses}), so only the confirmation split is a clean test of the
+pre-specified claims. Accuracy is scored on closed yes/no questions only, using logit
+verdicts. Open-ended generations are capped at 64 tokens, so they are not scored, and the
+accuracy numbers would be unreliable for longer answers. Raising the cap from 8 to 64 tokens
+did not produce scorable open-ended answers in our runs, so open-ended accuracy is reported
+as zero-coverage rather than as a result. The runs used free Kaggle GPUs (two T4s per run),
+which set the sample count and the generation length we could afford. Longer generation and
+a full open-ended evaluation are left for follow-up work with more compute. Some Weights \&
+Biases logs were not recorded in the cloud, so the Kaggle logs and exported files are the
+complete record. The question-dominance ratio is
+relative to the model's own language prior, so it does not measure absolute reliance on
+the text. The encoder-versus-decoder question is unresolved: the encoder change is
+documented, but the correlational analyses cannot attribute the routing change to either
+part. We used one model pair, so the findings may not transfer to other medical
+fine-tunes or other benchmarks.

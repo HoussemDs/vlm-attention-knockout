@@ -1,0 +1,90 @@
+\subsection{Models}
+
+We compare two models from the same architecture family:
+\begin{itemize}
+  \item \textbf{Gemma-3-4B-IT}~\citep{gemma2025}: a 4B-parameter general-purpose
+        instruction-tuned VLM.
+  \item \textbf{MedGemma-4B-IT}~\citep{medgemma2025}: a medical fine-tune of
+        Gemma-3-4B trained on medical imaging and clinical text.
+\end{itemize}
+Because MedGemma-4B was fine-tuned \emph{directly} from Gemma-3-4B, the pair shares
+architecture, layer count (34 decoder layers), tokenizer, and image token budget
+(256 visual tokens per image), making the information-flow curves directly comparable.
+
+\textbf{Note on encoder difference.} MedGemma uses a medical SigLIP vision encoder,
+while Gemma-3 uses a general SigLIP encoder. The probe measures routing through the
+\emph{decoder}, so the reported information-flow values reflect ``how the decoder uses
+the image features it receives,'' not properties of the encoder itself.
+
+\subsection{Dataset}
+
+We evaluate on \textbf{VQA-RAD}~\citep{lau2018dataset}, a radiology visual
+question-answering dataset covering chest X-rays, CT scans, and MRIs. We use 250
+samples from the VQA-RAD test split, partitioned by the written protocol into a
+100-sample discovery split (indices 0000--0099) and a 150-sample confirmation split
+(indices 0100--0249), with identical indices for both models. Accuracy is computed on
+the closed-ended yes/no questions only.
+
+\subsection{Setup}
+
+Both models are run in \texttt{bfloat16} (no weight quantization) on Kaggle T4 GPUs.
+The forward hook is applied with window size $K=1$, sweeping all 34 decoder layers
+per sample per block type. Generation uses greedy decoding with
+\texttt{max\_new\_tokens=64}.
+
+\subsection{Pre-specified analysis protocol}
+\label{sec:hypotheses}
+
+\textbf{Timing of the protocol.} The work ran in four steps. (1) A 50-sample pilot of the probe on both models. It measured closed-question accuracy,
+F1 and QDR. Accuracy and F1 were computed with a text-extraction scorer, which was later
+found to be invalid; the paper reports only the logit verdict. The pilot's QDR drop was
+larger than the effects later measured, and it did not replicate at $n{=}100$. QDR was then
+chosen as the primary metric. (2) The full pipeline was rerun on discovery indices 0000--0099 (100
+samples per model), which produced the candidate metrics. (3) The protocol
+(\texttt{PREREGISTRATION.md}) was written on 2026-10-24, after the Gemma 100-sample trace
+had been analysed, the 50-sample MedGemma trace and the smoke-test outputs had been seen, and the MedGemma 100-sample output had not yet been analysed. (4) A launch on
+0100--0199 was started and stopped after about three minutes, before the model loaded, and
+produced no output. Confirmation then ran once on 0100--0249 (150 samples, none used in
+discovery). The protocol has not been filed with an external registry, so the confirmation split is the clean test of the
+pre-specified claims.
+
+\textbf{Deviation from protocol.} Two of the eleven declared metrics turned out to be
+deterministic transforms of two others (answer perplexity of mean answer log-prob;
+image entry depth of image entry layer), carrying identical test statistics. We
+therefore apply the Holm correction across the nine distinct quantities rather than the
+eleven declared metrics. Under the original eleven-test correction the same five effects
+survive, so the change does not alter any conclusion.
+
+Our analysis follows a written protocol dated 2026-10-24, which was written after part of the discovery analysis (see the timing note above). It has not been filed with an external registry. The VQA-RAD test split is partitioned into a
+\textbf{discovery} set (indices 0000--0099), a \textbf{confirmation} set
+(0100--0249), and a reserve (0250--0450, not used). All metrics are computed and tested on discovery; any
+metric with a Holm-adjusted $p<0.05$ across the nine distinct quantities (see the deviation below) becomes a
+\emph{discovery candidate} that is re-tested, with the same test and direction, on the
+confirmation set, and is reported as a \emph{finding} only if it replicates
+($p<0.05$, same direction). The pre-specified \textbf{primary} confirmatory test is
+that the per-sample question dominance ratio (QDR, \texttt{image\_to\_last}) is lower
+for MedGemma than for Gemma (Mann--Whitney $U$, two-sided, $\alpha{=}0.05$). The
+pre-specified protocol also asks for a permutation test alongside each Mann--Whitney test; we
+use a two-sided permutation test on the difference of medians (10{,}000 permutations) as
+that companion check, and report it next to each raw $p$-value.
+
+We state three directional expectations about what medical fine-tuning should change
+(reported against, not assumed). They appear in the paper by
+2026-10-26, but they are not in the protocol file as it stood that day. They are recorded in
+the protocol by Amendment 4 (2026-10-29). The repository does not establish when they were
+first written, so they are not claimed as pre-specified:
+\begin{itemize}
+  \item \textbf{H1} (Image Entry Layer): fine-tuning shifts image evidence to
+        \emph{earlier} decoder depths (faster visual integration).
+  \item \textbf{H2} (Question Dominance): fine-tuning lowers the QDR, making the
+        model more visually grounded relative to language priors.
+  \item \textbf{H3} (Peak Layer): the peak image-information layer shifts earlier.
+\end{itemize}
+
+\subsection{Accuracy Evaluation}
+
+For closed-ended questions, accuracy uses the logit verdict: the model's probability of
+``yes'' versus ``no'' at the first answer token, aggregated over casing and spacing
+variants. Text extraction is not used for accuracy, because generations are truncated
+before the answer. Open-ended questions are not evaluated. The routing metrics operate on
+token log-probabilities and are unaffected by this choice.

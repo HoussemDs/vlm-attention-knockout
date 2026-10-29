@@ -1,0 +1,958 @@
+{
+  "label": "gemma",
+  "model_dir": "/kaggle/input/models/google/gemma-3/transformers/gemma-3-4b-it/1",
+  "n_samples": 100,
+  "n_ok": 100,
+  "lens_applied_final_norm": true,
+  "attention_available": true,
+  "curve_lens_answer_logprob": [
+    -571.6009375,
+    -37.93488075256348,
+    -43.49498462677002,
+    -34.010016422271725,
+    -28.74714811325073,
+    -18.480025081634523,
+    -16.16254800796509,
+    -13.577829484939576,
+    -11.990513591766357,
+    -11.82753010749817,
+    -11.497387762069701,
+    -11.579305715560913,
+    -11.64735779762268,
+    -11.389517116546632,
+    -10.860676918029785,
+    -10.262340745925904,
+    -9.662100162506103,
+    -8.860035676956176,
+    -9.138525309562683,
+    -8.665463190078736,
+    -7.364066426753998,
+    -5.945183632373809,
+    -4.579407762289048,
+    -4.21729884210974,
+    -3.1355383357778193,
+    -3.7181950336880982,
+    -1.1764946639165281,
+    -1.0725704361125827,
+    -1.1200826839450746,
+    -1.0530255880672486,
+    -0.9237672221660614,
+    -0.8640445551835001,
+    -0.7326203596591949,
+    -0.8136180191859603,
+    -20.093032932281496
+  ],
+  "curve_lens_entropy": [
+    0.0,
+    0.6374297735095024,
+    0.5186529496312141,
+    0.7896104645729065,
+    0.7651994967460632,
+    2.032173388004303,
+    3.545532147884369,
+    6.203165545463562,
+    8.639851121902465,
+    10.59706003189087,
+    11.52857741355896,
+    11.946040382385254,
+    12.133727493286132,
+    12.169716119766235,
+    12.21055510520935,
+    12.172264575958252,
+    12.119926471710205,
+    11.956582231521606,
+    11.783321084976196,
+    11.51809944152832,
+    10.643874502182006,
+    7.862900767326355,
+    4.2540591430664065,
+    2.1101449382305146,
+    1.7344991901516915,
+    1.4981764982640744,
+    0.5687827195227146,
+    0.6033143758773803,
+    0.4430287524312735,
+    0.4980505234748125,
+    0.557024542838335,
+    0.5346848879754543,
+    0.2714900749176741,
+    0.3764136879332364,
+    0.2709254987018423
+  ],
+  "curve_lens_dla": [
+    0.0,
+    533.6660567474365,
+    -5.560103874206543,
+    9.48496820449829,
+    5.2628683090209964,
+    10.267123031616212,
+    2.3174770736694335,
+    2.5847185230255127,
+    1.5873158931732179,
+    0.16298348426818848,
+    0.3301423454284668,
+    -0.08191795349121093,
+    -0.06805208206176758,
+    0.2578406810760498,
+    0.5288401985168457,
+    0.5983361721038818,
+    0.6002405834197998,
+    0.8020644855499267,
+    -0.27848963260650633,
+    0.4730621194839478,
+    1.3013967633247376,
+    1.418882794380188,
+    1.3657758700847626,
+    0.36210892017930746,
+    1.0817605063319207,
+    -0.5826566979102791,
+    2.54170036977157,
+    0.10392422780394554,
+    -0.04751224783249199,
+    0.06705709587782621,
+    0.12925836590118706,
+    0.05972266698256135,
+    0.1314241955243051,
+    -0.08099765952676535,
+    -19.279414913095533
+  ],
+  "curve_attn_to_image": [
+    0.1518359375,
+    0.104970703125,
+    0.07193115234375,
+    0.0431732177734375,
+    0.097373046875,
+    0.07279541015625,
+    0.1512890625,
+    0.08939697265625,
+    0.0936376953125,
+    0.20865234375,
+    0.1315283203125,
+    0.1589208984375,
+    0.222607421875,
+    0.1515576171875,
+    0.15984375,
+    0.212109375,
+    0.1777734375,
+    0.20876953125,
+    0.073212890625,
+    0.147265625,
+    0.1395556640625,
+    0.1215087890625,
+    0.170517578125,
+    0.278662109375,
+    0.0806689453125,
+    0.047906494140625,
+    0.08587890625,
+    0.05623046875,
+    0.046817626953125,
+    0.03575439453125,
+    0.1266552734375,
+    0.0989453125,
+    0.059462890625,
+    0.06266845703125
+  ],
+  "mean_answer_formation_frac": 0.7794117647058824,
+  "per_sample": [
+    {
+      "id": "vqarad_test_0000",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -19.011138916015625,
+      "final_entropy": 0.06148015707731247
+    },
+    {
+      "id": "vqarad_test_0001",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -19.00454330444336,
+      "final_entropy": 0.030922014266252518
+    },
+    {
+      "id": "vqarad_test_0002",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -21.500205993652344,
+      "final_entropy": 0.001969331642612815
+    },
+    {
+      "id": "vqarad_test_0003",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.50412368774414,
+      "final_entropy": 0.02696131356060505
+    },
+    {
+      "id": "vqarad_test_0004",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -26.132844924926758,
+      "final_entropy": 0.39934399724006653
+    },
+    {
+      "id": "vqarad_test_0005",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -14.130572319030762,
+      "final_entropy": 0.38841649889945984
+    },
+    {
+      "id": "vqarad_test_0006",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -22.500009536743164,
+      "final_entropy": 0.00012733654875773937
+    },
+    {
+      "id": "vqarad_test_0007",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.01349639892578,
+      "final_entropy": 0.07749093323945999
+    },
+    {
+      "id": "vqarad_test_0008",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.206907272338867,
+      "final_entropy": 0.5064477324485779
+    },
+    {
+      "id": "vqarad_test_0009",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -13.052427291870117,
+      "final_entropy": 0.2181120216846466
+    },
+    {
+      "id": "vqarad_test_0010",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -15.018844604492188,
+      "final_entropy": 0.09627232700586319
+    },
+    {
+      "id": "vqarad_test_0011",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -19.578893661499023,
+      "final_entropy": 0.26858118176460266
+    },
+    {
+      "id": "vqarad_test_0012",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -23.548587799072266,
+      "final_entropy": 0.19088268280029297
+    },
+    {
+      "id": "vqarad_test_0013",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -19.00091552734375,
+      "final_entropy": 0.007338740397244692
+    },
+    {
+      "id": "vqarad_test_0014",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -12.56010627746582,
+      "final_entropy": 0.25509655475616455
+    },
+    {
+      "id": "vqarad_test_0015",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -23.006874084472656,
+      "final_entropy": 0.041852910071611404
+    },
+    {
+      "id": "vqarad_test_0016",
+      "answer_token": 2094,
+      "answer_formation_layer": 18,
+      "answer_formation_frac": 0.5294117647058824,
+      "final_answer_logprob": -16.0,
+      "final_entropy": 1.986129518627422e-06
+    },
+    {
+      "id": "vqarad_test_0017",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -21.974079132080078,
+      "final_entropy": 0.662888765335083
+    },
+    {
+      "id": "vqarad_test_0018",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -14.55509090423584,
+      "final_entropy": 0.8858245611190796
+    },
+    {
+      "id": "vqarad_test_0019",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.84902000427246,
+      "final_entropy": 0.7139647006988525
+    },
+    {
+      "id": "vqarad_test_0020",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -14.004597663879395,
+      "final_entropy": 0.7778853178024292
+    },
+    {
+      "id": "vqarad_test_0021",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.475358963012695,
+      "final_entropy": 0.6725740432739258
+    },
+    {
+      "id": "vqarad_test_0022",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -21.0,
+      "final_entropy": 1.2518114090198651e-05
+    },
+    {
+      "id": "vqarad_test_0023",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -23.313282012939453,
+      "final_entropy": 0.5824354887008667
+    },
+    {
+      "id": "vqarad_test_0024",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -24.001693725585938,
+      "final_entropy": 0.013273553922772408
+    },
+    {
+      "id": "vqarad_test_0025",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.0,
+      "final_entropy": 4.360586899565533e-06
+    },
+    {
+      "id": "vqarad_test_0026",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -18.580415725708008,
+      "final_entropy": 0.2800910472869873
+    },
+    {
+      "id": "vqarad_test_0027",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.7020263671875,
+      "final_entropy": 0.4807547926902771
+    },
+    {
+      "id": "vqarad_test_0028",
+      "answer_token": 117494,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -37.504093170166016,
+      "final_entropy": 0.026663385331630707
+    },
+    {
+      "id": "vqarad_test_0029",
+      "answer_token": 117494,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -36.00007629394531,
+      "final_entropy": 0.00079837825614959
+    },
+    {
+      "id": "vqarad_test_0030",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -18.5072021484375,
+      "final_entropy": 0.04478122666478157
+    },
+    {
+      "id": "vqarad_test_0031",
+      "answer_token": 10784,
+      "answer_formation_layer": 22,
+      "answer_formation_frac": 0.6470588235294118,
+      "final_answer_logprob": -18.19480323791504,
+      "final_entropy": 0.7057768702507019
+    },
+    {
+      "id": "vqarad_test_0032",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -23.000003814697266,
+      "final_entropy": 6.30353024462238e-05
+    },
+    {
+      "id": "vqarad_test_0033",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -25.727787017822266,
+      "final_entropy": 0.5904106497764587
+    },
+    {
+      "id": "vqarad_test_0034",
+      "answer_token": 6481,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -13.815102577209473,
+      "final_entropy": 0.5947602391242981
+    },
+    {
+      "id": "vqarad_test_0035",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -21.000146865844727,
+      "final_entropy": 0.0015520334709435701
+    },
+    {
+      "id": "vqarad_test_0036",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -14.636785507202148,
+      "final_entropy": 0.41757604479789734
+    },
+    {
+      "id": "vqarad_test_0037",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -13.371739387512207,
+      "final_entropy": 0.7687008380889893
+    },
+    {
+      "id": "vqarad_test_0038",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -14.81595230102539,
+      "final_entropy": 0.6016295552253723
+    },
+    {
+      "id": "vqarad_test_0039",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -13.02151870727539,
+      "final_entropy": 0.11619852483272552
+    },
+    {
+      "id": "vqarad_test_0040",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -18.153179168701172,
+      "final_entropy": 0.47610244154930115
+    },
+    {
+      "id": "vqarad_test_0041",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -18.507619857788086,
+      "final_entropy": 0.047390542924404144
+    },
+    {
+      "id": "vqarad_test_0042",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -22.048864364624023,
+      "final_entropy": 0.193633034825325
+    },
+    {
+      "id": "vqarad_test_0043",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -24.52994728088379,
+      "final_entropy": 0.13442736864089966
+    },
+    {
+      "id": "vqarad_test_0044",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -19.000137329101562,
+      "final_entropy": 0.0014118816470727324
+    },
+    {
+      "id": "vqarad_test_0045",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -22.500045776367188,
+      "final_entropy": 0.0005059385439381003
+    },
+    {
+      "id": "vqarad_test_0046",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -15.508143424987793,
+      "final_entropy": 0.052770357578992844
+    },
+    {
+      "id": "vqarad_test_0047",
+      "answer_token": 19058,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -16.500913619995117,
+      "final_entropy": 0.0073132892139256
+    },
+    {
+      "id": "vqarad_test_0048",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.627422332763672,
+      "final_entropy": 0.3694642186164856
+    },
+    {
+      "id": "vqarad_test_0049",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -33.50250244140625,
+      "final_entropy": 0.01762879267334938
+    },
+    {
+      "id": "vqarad_test_0050",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -20.127737045288086,
+      "final_entropy": 0.3716420531272888
+    },
+    {
+      "id": "vqarad_test_0051",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -31.000003814697266,
+      "final_entropy": 5.3277461120160297e-05
+    },
+    {
+      "id": "vqarad_test_0052",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -26.000150680541992,
+      "final_entropy": 0.0015585006913170218
+    },
+    {
+      "id": "vqarad_test_0053",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -26.000547409057617,
+      "final_entropy": 0.005073799751698971
+    },
+    {
+      "id": "vqarad_test_0054",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -15.013602256774902,
+      "final_entropy": 0.08197271078824997
+    },
+    {
+      "id": "vqarad_test_0055",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -13.56554126739502,
+      "final_entropy": 0.9343560934066772
+    },
+    {
+      "id": "vqarad_test_0056",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -20.524791717529297,
+      "final_entropy": 0.1296478509902954
+    },
+    {
+      "id": "vqarad_test_0057",
+      "answer_token": 6481,
+      "answer_formation_layer": 30,
+      "answer_formation_frac": 0.8823529411764706,
+      "final_answer_logprob": -12.806495666503906,
+      "final_entropy": 0.7534963488578796
+    },
+    {
+      "id": "vqarad_test_0058",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -18.127031326293945,
+      "final_entropy": 0.3665047883987427
+    },
+    {
+      "id": "vqarad_test_0059",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -20.626968383789062,
+      "final_entropy": 0.36583808064460754
+    },
+    {
+      "id": "vqarad_test_0060",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -17.37670135498047,
+      "final_entropy": 0.797538161277771
+    },
+    {
+      "id": "vqarad_test_0061",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.266847610473633,
+      "final_entropy": 0.6845230460166931
+    },
+    {
+      "id": "vqarad_test_0062",
+      "answer_token": 8291,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -22.500001907348633,
+      "final_entropy": 3.16575969918631e-05
+    },
+    {
+      "id": "vqarad_test_0063",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -20.030094146728516,
+      "final_entropy": 0.13545864820480347
+    },
+    {
+      "id": "vqarad_test_0064",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.57992935180664,
+      "final_entropy": 0.2769743502140045
+    },
+    {
+      "id": "vqarad_test_0065",
+      "answer_token": 8291,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -23.50247573852539,
+      "final_entropy": 0.017311571165919304
+    },
+    {
+      "id": "vqarad_test_0066",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -23.00247573852539,
+      "final_entropy": 0.01731300540268421
+    },
+    {
+      "id": "vqarad_test_0067",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -21.000028610229492,
+      "final_entropy": 0.00031980988569557667
+    },
+    {
+      "id": "vqarad_test_0068",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -21.004175186157227,
+      "final_entropy": 0.027541056275367737
+    },
+    {
+      "id": "vqarad_test_0069",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -21.579307556152344,
+      "final_entropy": 0.2724413573741913
+    },
+    {
+      "id": "vqarad_test_0070",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.580299377441406,
+      "final_entropy": 0.27895936369895935
+    },
+    {
+      "id": "vqarad_test_0071",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -21.511093139648438,
+      "final_entropy": 0.06098470836877823
+    },
+    {
+      "id": "vqarad_test_0072",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -18.579734802246094,
+      "final_entropy": 0.275162935256958
+    },
+    {
+      "id": "vqarad_test_0073",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -27.511381149291992,
+      "final_entropy": 0.06388252228498459
+    },
+    {
+      "id": "vqarad_test_0074",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -14.465494155883789,
+      "final_entropy": 0.914379358291626
+    },
+    {
+      "id": "vqarad_test_0075",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -29.5,
+      "final_entropy": 1.7744438807199003e-08
+    },
+    {
+      "id": "vqarad_test_0076",
+      "answer_token": 22515,
+      "answer_formation_layer": 23,
+      "answer_formation_frac": 0.6764705882352942,
+      "final_answer_logprob": -17.13666534423828,
+      "final_entropy": 0.4163721203804016
+    },
+    {
+      "id": "vqarad_test_0077",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -18.076948165893555,
+      "final_entropy": 0.3131195306777954
+    },
+    {
+      "id": "vqarad_test_0078",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -13.532156944274902,
+      "final_entropy": 0.14894597232341766
+    },
+    {
+      "id": "vqarad_test_0079",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -22.500118255615234,
+      "final_entropy": 0.0013713015941902995
+    },
+    {
+      "id": "vqarad_test_0080",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.500003814697266,
+      "final_entropy": 5.045712532592006e-05
+    },
+    {
+      "id": "vqarad_test_0081",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.00691795349121,
+      "final_entropy": 0.042095206677913666
+    },
+    {
+      "id": "vqarad_test_0082",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -18.500022888183594,
+      "final_entropy": 0.00028051473782397807
+    },
+    {
+      "id": "vqarad_test_0083",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -37.000003814697266,
+      "final_entropy": 3.1650699384044856e-05
+    },
+    {
+      "id": "vqarad_test_0084",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.502824783325195,
+      "final_entropy": 0.020512543618679047
+    },
+    {
+      "id": "vqarad_test_0085",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.5,
+      "final_entropy": 1.294135108764749e-05
+    },
+    {
+      "id": "vqarad_test_0086",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -24.50002670288086,
+      "final_entropy": 0.0003185062960255891
+    },
+    {
+      "id": "vqarad_test_0087",
+      "answer_token": 6481,
+      "answer_formation_layer": 29,
+      "answer_formation_frac": 0.8529411764705882,
+      "final_answer_logprob": -9.269729614257812,
+      "final_entropy": 0.7013578414916992
+    },
+    {
+      "id": "vqarad_test_0088",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -15.24133014678955,
+      "final_entropy": 0.621819794178009
+    },
+    {
+      "id": "vqarad_test_0089",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -22.50000762939453,
+      "final_entropy": 9.248932474292815e-05
+    },
+    {
+      "id": "vqarad_test_0090",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -20.50009536743164,
+      "final_entropy": 0.0010415759170427918
+    },
+    {
+      "id": "vqarad_test_0091",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.716384887695312,
+      "final_entropy": 0.5460749864578247
+    },
+    {
+      "id": "vqarad_test_0092",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.00267791748047,
+      "final_entropy": 0.01924021914601326
+    },
+    {
+      "id": "vqarad_test_0093",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -12.858041763305664,
+      "final_entropy": 1.1150448322296143
+    },
+    {
+      "id": "vqarad_test_0094",
+      "answer_token": 19058,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -23.813312530517578,
+      "final_entropy": 0.5827808976173401
+    },
+    {
+      "id": "vqarad_test_0095",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -16.626983642578125,
+      "final_entropy": 0.3659447729587555
+    },
+    {
+      "id": "vqarad_test_0096",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -19.0485897064209,
+      "final_entropy": 0.1908998191356659
+    },
+    {
+      "id": "vqarad_test_0097",
+      "answer_token": 8291,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -17.208133697509766,
+      "final_entropy": 0.7602028846740723
+    },
+    {
+      "id": "vqarad_test_0098",
+      "answer_token": 19058,
+      "answer_formation_layer": 25,
+      "answer_formation_frac": 0.7352941176470589,
+      "final_answer_logprob": -21.87154197692871,
+      "final_entropy": 0.7668285965919495
+    },
+    {
+      "id": "vqarad_test_0099",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -17.40782356262207,
+      "final_entropy": 0.8345798254013062
+    }
+  ]
+}

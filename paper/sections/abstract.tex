@@ -1,0 +1,20 @@
+Medical fine-tuning changes how vision-language models use an image, but it is unclear
+whether it makes them rely less on the question text. We measure this with per-layer
+attention knockout, which blocks image-to-answer or question-to-answer attention one
+layer at a time. The probe is applied as a pre-specified before/after instrument to
+Gemma-3-4B and its medical fine-tune MedGemma-4B on the VQA-RAD radiology benchmark
+(250 samples: discovery 0000--0099, confirmation 0100--0249).
+
+On the confirmation split, the pre-specified primary test holds: the median per-sample
+question-dominance ratio falls from 5.36 to 4.15 ($p{=}0.006$, Cliff's $\delta{=}0.18$),
+a small effect relative to the model's language prior. Four of five discovery candidates
+replicate (one only at the raw level). They show a more decisive first answer token,
+smaller closed yes/no logit margins, and lower image-to-answer information flow (IF AUC,
+replicated at the raw level only). A discovery-only ``image enters later'' shift
+does \emph{not} replicate and is reported as a null. Closed-ended accuracy is higher for
+the medical model (77.2\% vs.\ 44.3\%, $p{=}3.9{\times}10^{-5}$; both are forced-choice
+logit verdicts, not generated answers), but the base model sits
+at the always-``yes'' rate, below the majority-class baseline, so part of this gap is a
+baseline effect. The medical vision encoder differs sharply from the base (linear CKA
+0.155). Whether the change lies in the encoder or the decoder is left open and is the
+subject of follow-up work.

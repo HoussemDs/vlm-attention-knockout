@@ -1,0 +1,555 @@
+[{"stream_name":"stderr","time":6.36192051,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.361965273,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.239711941,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.239740575,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.239745573,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.239749966,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.854131832,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.854187144,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.854196782,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.854201536,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":26.587126614,"data":"\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\r\n"}
+,{"stream_name":"stdout","time":26.587183166,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":26.587191793,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":26.587196689,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\u001b[0m\u001b[31m\r\n"}
+,{"stream_name":"stdout","time":26.940603051,"data":"\u001b[0mNote: you may need to restart the kernel to use updated packages.\n"}
+,{"stream_name":"stdout","time":42.478693525,"data":"deps OK | transformers 4.56.2 | torch 2.11.0+cu128 | GPUs 2\n"}
+,{"stream_name":"stdout","time":65.396085682,"data":"code ready: ['__notebook__.ipynb', 'analysis', 'compare_models.py', 'fgtracer', 'log_to_trackers.py', 'merge_outputs.py', 'reeval_accuracy.py', 'run_tracing.py']\n"}
+,{"stream_name":"stdout","time":65.561151188,"data":"HF token loaded | W\u0026B skipped (Connection error trying to communicate with service.)\n"}
+,{"stream_name":"stdout","time":65.561195462,"data":"will load from HF: google/medgemma-4b-it\n"}
+,{"stream_name":"stderr","time":81.789202013,"data":"\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stderr","time":81.899208021,"data":"\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3457.75 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5729.40 examples/s]\n"}
+,{"stream_name":"stderr","time":81.949902344,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 9013.60 examples/s]\n"}
+,{"stream_name":"stderr","time":82.078428597,"data":"\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3457.75 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5729.40 examples/s]\n"}
+,{"stream_name":"stderr","time":82.078453855,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 9013.60 examples/s]\n"}
+,{"stream_name":"stderr","time":82.078496478,"data":"\n"}
+,{"stream_name":"stderr","time":82.078500255,"data":"\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3457.75 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5729.40 examples/s]\n"}
+,{"stream_name":"stderr","time":82.078504953,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 9013.60 examples/s]\n"}
+,{"stream_name":"stderr","time":87.56636108,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":87.767542655,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":87.767602911,"data":"\n"}
+,{"stream_name":"stderr","time":87.767608034,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":89.373934033,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":89.576965613,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":89.576998664,"data":"\n"}
+,{"stream_name":"stderr","time":89.577004019,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stdout","time":93.033883925,"data":"[FG-TRACER] using VQA-RAD: data/annotations/vqarad_test.json (50 samples)\n"}
+,{"stream_name":"stdout","time":93.033915339,"data":"[FG-TRACER] model=google/medgemma-4b-it task=vqa_rad samples=50 k=1\n"}
+,{"stream_name":"stdout","time":93.23654173,"data":"[FG-TRACER] using VQA-RAD: data/annotations/vqarad_test.json (50 samples)\n"}
+,{"stream_name":"stdout","time":93.236589828,"data":"[FG-TRACER] model=google/medgemma-4b-it task=vqa_rad samples=50 k=1\n"}
+,{"stream_name":"stderr","time":93.237863422,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":93.290886634,"data":"[FG-TRACER] using VQA-RAD: data/annotations/vqarad_test.json (50 samples)\n"}
+,{"stream_name":"stdout","time":93.290906829,"data":"[FG-TRACER] model=google/medgemma-4b-it task=vqa_rad samples=50 k=1\n"}
+,{"stream_name":"stdout","time":93.492834069,"data":"[FG-TRACER] using VQA-RAD: data/annotations/vqarad_test.json (50 samples)\n"}
+,{"stream_name":"stdout","time":93.492864812,"data":"[FG-TRACER] model=google/medgemma-4b-it task=vqa_rad samples=50 k=1\n"}
+,{"stream_name":"stderr","time":93.49414199899999,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":129.731963159,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.70s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.35s/it]\n"}
+,{"stream_name":"stderr","time":129.760415648,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.47s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.23s/it]\n"}
+,{"stream_name":"stderr","time":129.938709348,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.70s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.35s/it]\n"}
+,{"stream_name":"stderr","time":129.938735853,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.47s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.23s/it]\n"}
+,{"stream_name":"stderr","time":129.938741411,"data":"\n"}
+,{"stream_name":"stderr","time":129.938745484,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.70s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.35s/it]\n"}
+,{"stream_name":"stderr","time":129.938750455,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:36\u003c00:36, 36.47s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:36\u003c00:00, 18.23s/it]\n"}
+,{"stream_name":"stderr","time":130.617574927,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":136.599626339,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stderr","time":136.601993933,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stderr","time":136.768040759,"data":"\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stderr","time":136.768088893,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stderr","time":136.768108724,"data":"\n"}
+,{"stream_name":"stderr","time":136.768113304,"data":"\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:06\u003c00:06,  6.15s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stderr","time":136.768118938,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:06\u003c00:00,  3.09s/it]\n"}
+,{"stream_name":"stdout","time":16152.14999273,"data":"[FG-TRACER] loaded google/medgemma-4b-it | arch=gemma3 | text layers=34 | image_token_id=262144 | device=cuda | dtype=bfloat16 | quantization=none\n"}
+,{"stream_name":"stdout","time":16152.150050387,"data":"  [image_to_last] 1/50 id=vqarad_test_0050 tokens=64 IF=+0.0030 (peak layer 14: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.150055859,"data":"  [image_to_last] 2/50 id=vqarad_test_0051 tokens=64 IF=-0.0007 (peak layer 6: +0.0130)\n"}
+,{"stream_name":"stdout","time":16152.150060438,"data":"  [image_to_last] 3/50 id=vqarad_test_0052 tokens=64 IF=+0.0005 (peak layer 17: +0.0109)\n"}
+,{"stream_name":"stdout","time":16152.150064871,"data":"  [image_to_last] 4/50 id=vqarad_test_0053 tokens=64 IF=-0.0010 (peak layer 17: +0.0054)\n"}
+,{"stream_name":"stdout","time":16152.150069123,"data":"  [image_to_last] 5/50 id=vqarad_test_0054 tokens=64 IF=-0.0020 (peak layer 17: +0.0043)\n"}
+,{"stream_name":"stdout","time":16152.150073171,"data":"  [image_to_last] 6/50 id=vqarad_test_0055 tokens=36 IF=-0.0038 (peak layer 11: +0.0085)\n"}
+,{"stream_name":"stdout","time":16152.150077214,"data":"  [image_to_last] 7/50 id=vqarad_test_0056 tokens=20 IF=-0.0016 (peak layer 16: +0.0098)\n"}
+,{"stream_name":"stdout","time":16152.150081391,"data":"  [image_to_last] 8/50 id=vqarad_test_0057 tokens=39 IF=+0.0012 (peak layer 21: +0.0101)\n"}
+,{"stream_name":"stdout","time":16152.150085435,"data":"  [image_to_last] 9/50 id=vqarad_test_0058 tokens=55 IF=-0.0011 (peak layer 16: +0.0045)\n"}
+,{"stream_name":"stdout","time":16152.150089479,"data":"  [image_to_last] 10/50 id=vqarad_test_0059 tokens=64 IF=-0.0003 (peak layer 17: +0.0188)\n"}
+,{"stream_name":"stdout","time":16152.150093726,"data":"  [image_to_last] 11/50 id=vqarad_test_0060 tokens=64 IF=+0.0015 (peak layer 17: +0.0232)\n"}
+,{"stream_name":"stdout","time":16152.150097982,"data":"  [image_to_last] 12/50 id=vqarad_test_0061 tokens=64 IF=-0.0005 (peak layer 11: +0.0070)\n"}
+,{"stream_name":"stdout","time":16152.150102193,"data":"  [image_to_last] 13/50 id=vqarad_test_0062 tokens=64 IF=+0.0024 (peak layer 24: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.150106281,"data":"  [image_to_last] 14/50 id=vqarad_test_0063 tokens=48 IF=-0.0038 (peak layer 17: +0.0111)\n"}
+,{"stream_name":"stdout","time":16152.150110464,"data":"  [image_to_last] 15/50 id=vqarad_test_0064 tokens=64 IF=-0.0033 (peak layer 17: +0.0168)\n"}
+,{"stream_name":"stdout","time":16152.150114673,"data":"  [image_to_last] 16/50 id=vqarad_test_0065 tokens=64 IF=-0.0003 (peak layer 17: +0.0257)\n"}
+,{"stream_name":"stdout","time":16152.150118874,"data":"  [image_to_last] 17/50 id=vqarad_test_0066 tokens=64 IF=-0.0002 (peak layer 17: +0.0250)\n"}
+,{"stream_name":"stdout","time":16152.150122917,"data":"  [image_to_last] 18/50 id=vqarad_test_0067 tokens=64 IF=-0.0020 (peak layer 11: +0.0082)\n"}
+,{"stream_name":"stdout","time":16152.15012716,"data":"  [image_to_last] 19/50 id=vqarad_test_0068 tokens=64 IF=-0.0022 (peak layer 17: +0.0117)\n"}
+,{"stream_name":"stdout","time":16152.150140771,"data":"  [image_to_last] 20/50 id=vqarad_test_0069 tokens=64 IF=+0.0001 (peak layer 17: +0.0147)\n"}
+,{"stream_name":"stdout","time":16152.150144372,"data":"  [image_to_last] 21/50 id=vqarad_test_0070 tokens=64 IF=+0.0016 (peak layer 5: +0.0068)\n"}
+,{"stream_name":"stdout","time":16152.150149168,"data":"  [image_to_last] 22/50 id=vqarad_test_0071 tokens=26 IF=+0.0033 (peak layer 21: +0.0077)\n"}
+,{"stream_name":"stdout","time":16152.150152657,"data":"  [image_to_last] 23/50 id=vqarad_test_0072 tokens=26 IF=-0.0013 (peak layer 21: +0.0089)\n"}
+,{"stream_name":"stdout","time":16152.150156031,"data":"  [image_to_last] 24/50 id=vqarad_test_0073 tokens=64 IF=+0.0004 (peak layer 14: +0.0067)\n"}
+,{"stream_name":"stdout","time":16152.150177287,"data":"  [image_to_last] 25/50 id=vqarad_test_0074 tokens=64 IF=+0.0012 (peak layer 17: +0.0059)\n"}
+,{"stream_name":"stdout","time":16152.150180805,"data":"  [image_to_last] 26/50 id=vqarad_test_0075 tokens=64 IF=+0.0004 (peak layer 6: +0.0055)\n"}
+,{"stream_name":"stdout","time":16152.150184205,"data":"  [image_to_last] 27/50 id=vqarad_test_0076 tokens=43 IF=-0.0004 (peak layer 16: +0.0139)\n"}
+,{"stream_name":"stdout","time":16152.150187395,"data":"  [image_to_last] 28/50 id=vqarad_test_0077 tokens=50 IF=+0.0008 (peak layer 16: +0.0072)\n"}
+,{"stream_name":"stdout","time":16152.150190798,"data":"  [image_to_last] 29/50 id=vqarad_test_0078 tokens=23 IF=-0.0032 (peak layer 26: +0.0119)\n"}
+,{"stream_name":"stdout","time":16152.150194136,"data":"  [image_to_last] 30/50 id=vqarad_test_0079 tokens=64 IF=-0.0009 (peak layer 19: +0.0071)\n"}
+,{"stream_name":"stdout","time":16152.150197415,"data":"  [image_to_last] 31/50 id=vqarad_test_0080 tokens=64 IF=-0.0002 (peak layer 15: +0.0059)\n"}
+,{"stream_name":"stdout","time":16152.150200678,"data":"  [image_to_last] 32/50 id=vqarad_test_0081 tokens=26 IF=-0.0003 (peak layer 21: +0.0189)\n"}
+,{"stream_name":"stdout","time":16152.150203908,"data":"  [image_to_last] 33/50 id=vqarad_test_0082 tokens=20 IF=-0.0030 (peak layer 32: +0.0013)\n"}
+,{"stream_name":"stdout","time":16152.150207219,"data":"  [image_to_last] 34/50 id=vqarad_test_0083 tokens=64 IF=-0.0001 (peak layer 17: +0.0215)\n"}
+,{"stream_name":"stdout","time":16152.150210629,"data":"  [image_to_last] 35/50 id=vqarad_test_0084 tokens=64 IF=-0.0015 (peak layer 17: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.150213925,"data":"  [image_to_last] 36/50 id=vqarad_test_0085 tokens=64 IF=-0.0037 (peak layer 17: +0.0257)\n"}
+,{"stream_name":"stdout","time":16152.150217309,"data":"  [image_to_last] 37/50 id=vqarad_test_0086 tokens=64 IF=+0.0035 (peak layer 15: +0.0075)\n"}
+,{"stream_name":"stdout","time":16152.150220682,"data":"  [image_to_last] 38/50 id=vqarad_test_0087 tokens=64 IF=-0.0016 (peak layer 11: +0.0072)\n"}
+,{"stream_name":"stdout","time":16152.150223919,"data":"  [image_to_last] 39/50 id=vqarad_test_0088 tokens=21 IF=+0.0046 (peak layer 30: +0.0086)\n"}
+,{"stream_name":"stdout","time":16152.150227152,"data":"  [image_to_last] 40/50 id=vqarad_test_0089 tokens=37 IF=+0.0040 (peak layer 12: +0.0108)\n"}
+,{"stream_name":"stdout","time":16152.150230366,"data":"  [image_to_last] 41/50 id=vqarad_test_0090 tokens=33 IF=+0.0018 (peak layer 17: +0.0209)\n"}
+,{"stream_name":"stdout","time":16152.150235769,"data":"  [image_to_last] 42/50 id=vqarad_test_0091 tokens=64 IF=+0.0008 (peak layer 21: +0.0058)\n"}
+,{"stream_name":"stdout","time":16152.150239129,"data":"  [image_to_last] 43/50 id=vqarad_test_0092 tokens=64 IF=-0.0003 (peak layer 17: +0.0139)\n"}
+,{"stream_name":"stdout","time":16152.150242669,"data":"  [image_to_last] 44/50 id=vqarad_test_0093 tokens=64 IF=-0.0016 (peak layer 17: +0.0083)\n"}
+,{"stream_name":"stdout","time":16152.150246623,"data":"  [image_to_last] 45/50 id=vqarad_test_0094 tokens=64 IF=+0.0002 (peak layer 17: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.150253466,"data":"  [image_to_last] 46/50 id=vqarad_test_0095 tokens=64 IF=-0.0017 (peak layer 17: +0.0096)\n"}
+,{"stream_name":"stdout","time":16152.150256894,"data":"  [image_to_last] 47/50 id=vqarad_test_0096 tokens=39 IF=+0.0015 (peak layer 21: +0.0097)\n"}
+,{"stream_name":"stdout","time":16152.150260324,"data":"  [image_to_last] 48/50 id=vqarad_test_0097 tokens=32 IF=-0.0001 (peak layer 31: +0.0107)\n"}
+,{"stream_name":"stdout","time":16152.150263613,"data":"  [image_to_last] 49/50 id=vqarad_test_0098 tokens=24 IF=-0.0029 (peak layer 6: +0.0098)\n"}
+,{"stream_name":"stdout","time":16152.150266978,"data":"  [image_to_last] 50/50 id=vqarad_test_0099 tokens=64 IF=-0.0022 (peak layer 11: +0.0045)\n"}
+,{"stream_name":"stdout","time":16152.150270353,"data":"[FG-TRACER] image_to_last summary:\n"}
+,{"stream_name":"stdout","time":16152.150273586,"data":"  accuracy (loose)  : 0.580  (29/50)\n"}
+,{"stream_name":"stdout","time":16152.150276763,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":16152.150280063,"data":"  closed (yes/no)   : 0.778  (n=27)\n"}
+,{"stream_name":"stdout","time":16152.150283151,"data":"  open-ended        : 0.348  (n=23)\n"}
+,{"stream_name":"stdout","time":16152.150286418,"data":"  mean log-prob     : -0.251\n"}
+,{"stream_name":"stdout","time":16152.150289709,"data":"  log-prob correct  : -0.260   incorrect: -0.238  (Δ=-0.021)\n"}
+,{"stream_name":"stdout","time":16152.150293501,"data":"[FG-TRACER] wrote outputs_medgemma_g1/results_vqa_rad_image_to_last_k1.json  (9399.1s)\n"}
+,{"stream_name":"stdout","time":16152.15029676,"data":"  [question_to_last] 1/50 id=vqarad_test_0050 tokens=64 IF=+0.0082 (peak layer 27: +0.0345)\n"}
+,{"stream_name":"stdout","time":16152.150302976,"data":"  [question_to_last] 2/50 id=vqarad_test_0051 tokens=64 IF=+0.0075 (peak layer 29: +0.0187)\n"}
+,{"stream_name":"stdout","time":16152.150306843,"data":"  [question_to_last] 3/50 id=vqarad_test_0052 tokens=64 IF=+0.0080 (peak layer 29: +0.0185)\n"}
+,{"stream_name":"stdout","time":16152.150310144,"data":"  [question_to_last] 4/50 id=vqarad_test_0053 tokens=64 IF=+0.0022 (peak layer 11: +0.0169)\n"}
+,{"stream_name":"stdout","time":16152.150313379,"data":"  [question_to_last] 5/50 id=vqarad_test_0054 tokens=64 IF=-0.0069 (peak layer 29: +0.0151)\n"}
+,{"stream_name":"stdout","time":16152.15031664,"data":"  [question_to_last] 6/50 id=vqarad_test_0055 tokens=36 IF=-0.0061 (peak layer 17: +0.0368)\n"}
+,{"stream_name":"stdout","time":16152.150320017,"data":"  [question_to_last] 7/50 id=vqarad_test_0056 tokens=20 IF=-0.0058 (peak layer 29: +0.0344)\n"}
+,{"stream_name":"stdout","time":16152.150323448,"data":"  [question_to_last] 8/50 id=vqarad_test_0057 tokens=39 IF=+0.0107 (peak layer 17: +0.0563)\n"}
+,{"stream_name":"stdout","time":16152.150326791,"data":"  [question_to_last] 9/50 id=vqarad_test_0058 tokens=55 IF=-0.0012 (peak layer 29: +0.0248)\n"}
+,{"stream_name":"stdout","time":16152.150331203,"data":"  [question_to_last] 10/50 id=vqarad_test_0059 tokens=64 IF=+0.0102 (peak layer 11: +0.0252)\n"}
+,{"stream_name":"stdout","time":16152.15033448,"data":"  [question_to_last] 11/50 id=vqarad_test_0060 tokens=64 IF=-0.0026 (peak layer 27: +0.0311)\n"}
+,{"stream_name":"stdout","time":16152.15099019,"data":"  [question_to_last] 12/50 id=vqarad_test_0061 tokens=64 IF=+0.0011 (peak layer 17: +0.0250)\n"}
+,{"stream_name":"stdout","time":16152.151045399,"data":"  [question_to_last] 13/50 id=vqarad_test_0062 tokens=64 IF=+0.0068 (peak layer 23: +0.0249)\n"}
+,{"stream_name":"stdout","time":16152.151050271,"data":"  [question_to_last] 14/50 id=vqarad_test_0063 tokens=48 IF=+0.0053 (peak layer 29: +0.0428)\n"}
+,{"stream_name":"stdout","time":16152.151054694,"data":"  [question_to_last] 15/50 id=vqarad_test_0064 tokens=64 IF=-0.0019 (peak layer 27: +0.0176)\n"}
+,{"stream_name":"stdout","time":16152.15107199,"data":"  [question_to_last] 16/50 id=vqarad_test_0065 tokens=64 IF=+0.0076 (peak layer 27: +0.0359)\n"}
+,{"stream_name":"stdout","time":16152.151076492,"data":"  [question_to_last] 17/50 id=vqarad_test_0066 tokens=64 IF=+0.0008 (peak layer 27: +0.0200)\n"}
+,{"stream_name":"stdout","time":16152.151080978,"data":"  [question_to_last] 18/50 id=vqarad_test_0067 tokens=64 IF=+0.0012 (peak layer 16: +0.0132)\n"}
+,{"stream_name":"stdout","time":16152.151085406,"data":"  [question_to_last] 19/50 id=vqarad_test_0068 tokens=64 IF=+0.0032 (peak layer 11: +0.0216)\n"}
+,{"stream_name":"stdout","time":16152.151089589,"data":"  [question_to_last] 20/50 id=vqarad_test_0069 tokens=64 IF=+0.0018 (peak layer 29: +0.0225)\n"}
+,{"stream_name":"stdout","time":16152.151107335,"data":"  [question_to_last] 21/50 id=vqarad_test_0070 tokens=64 IF=+0.0042 (peak layer 16: +0.0310)\n"}
+,{"stream_name":"stdout","time":16152.15111175,"data":"  [question_to_last] 22/50 id=vqarad_test_0071 tokens=26 IF=+0.0031 (peak layer 17: +0.0494)\n"}
+,{"stream_name":"stdout","time":16152.151116115,"data":"  [question_to_last] 23/50 id=vqarad_test_0072 tokens=26 IF=+0.0005 (peak layer 17: +0.0478)\n"}
+,{"stream_name":"stdout","time":16152.151120256,"data":"  [question_to_last] 24/50 id=vqarad_test_0073 tokens=64 IF=+0.0066 (peak layer 17: +0.0272)\n"}
+,{"stream_name":"stdout","time":16152.151124785,"data":"  [question_to_last] 25/50 id=vqarad_test_0074 tokens=64 IF=-0.0028 (peak layer 29: +0.0226)\n"}
+,{"stream_name":"stdout","time":16152.151129252,"data":"  [question_to_last] 26/50 id=vqarad_test_0075 tokens=64 IF=+0.0089 (peak layer 17: +0.0432)\n"}
+,{"stream_name":"stdout","time":16152.151133462,"data":"  [question_to_last] 27/50 id=vqarad_test_0076 tokens=43 IF=-0.0002 (peak layer 29: +0.0477)\n"}
+,{"stream_name":"stdout","time":16152.151137967,"data":"  [question_to_last] 28/50 id=vqarad_test_0077 tokens=50 IF=+0.0049 (peak layer 29: +0.0340)\n"}
+,{"stream_name":"stdout","time":16152.151142386,"data":"  [question_to_last] 29/50 id=vqarad_test_0078 tokens=23 IF=+0.0042 (peak layer 29: +0.0503)\n"}
+,{"stream_name":"stdout","time":16152.15114671,"data":"  [question_to_last] 30/50 id=vqarad_test_0079 tokens=64 IF=+0.0007 (peak layer 23: +0.0303)\n"}
+,{"stream_name":"stdout","time":16152.151150928,"data":"  [question_to_last] 31/50 id=vqarad_test_0080 tokens=64 IF=+0.0033 (peak layer 17: +0.0188)\n"}
+,{"stream_name":"stdout","time":16152.151155215,"data":"  [question_to_last] 32/50 id=vqarad_test_0081 tokens=26 IF=+0.0003 (peak layer 29: +0.0422)\n"}
+,{"stream_name":"stdout","time":16152.151172822,"data":"  [question_to_last] 33/50 id=vqarad_test_0082 tokens=20 IF=-0.0020 (peak layer 17: +0.0619)\n"}
+,{"stream_name":"stdout","time":16152.151182806,"data":"  [question_to_last] 34/50 id=vqarad_test_0083 tokens=64 IF=+0.0093 (peak layer 18: +0.0262)\n"}
+,{"stream_name":"stdout","time":16152.357228272,"data":"  [question_to_last] 35/50 id=vqarad_test_0084 tokens=64 IF=-0.0049 (peak layer 27: +0.0219)[FG-TRACER] loaded google/medgemma-4b-it | arch=gemma3 | text layers=34 | image_token_id=262144 | device=cuda | dtype=bfloat16 | quantization=none\n"}
+,{"stream_name":"stdout","time":16152.357264036,"data":"  [image_to_last] 1/50 id=vqarad_test_0050 tokens=64 IF=+0.0030 (peak layer 14: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.357269223,"data":"  [image_to_last] 2/50 id=vqarad_test_0051 tokens=64 IF=-0.0007 (peak layer 6: +0.0130)\n"}
+,{"stream_name":"stdout","time":16152.357274035,"data":"  [image_to_last] 3/50 id=vqarad_test_0052 tokens=64 IF=+0.0005 (peak layer 17: +0.0109)\n"}
+,{"stream_name":"stdout","time":16152.357278566,"data":"  [image_to_last] 4/50 id=vqarad_test_0053 tokens=64 IF=-0.0010 (peak layer 17: +0.0054)\n"}
+,{"stream_name":"stdout","time":16152.357294755,"data":"  [image_to_last] 5/50 id=vqarad_test_0054 tokens=64 IF=-0.0020 (peak layer 17: +0.0043)\n"}
+,{"stream_name":"stdout","time":16152.357299068,"data":"  [image_to_last] 6/50 id=vqarad_test_0055 tokens=36 IF=-0.0038 (peak layer 11: +0.0085)\n"}
+,{"stream_name":"stdout","time":16152.357303629,"data":"  [image_to_last] 7/50 id=vqarad_test_0056 tokens=20 IF=-0.0016 (peak layer 16: +0.0098)\n"}
+,{"stream_name":"stdout","time":16152.357308069,"data":"  [image_to_last] 8/50 id=vqarad_test_0057 tokens=39 IF=+0.0012 (peak layer 21: +0.0101)\n"}
+,{"stream_name":"stdout","time":16152.357312253,"data":"  [image_to_last] 9/50 id=vqarad_test_0058 tokens=55 IF=-0.0011 (peak layer 16: +0.0045)\n"}
+,{"stream_name":"stdout","time":16152.35731661,"data":"  [image_to_last] 10/50 id=vqarad_test_0059 tokens=64 IF=-0.0003 (peak layer 17: +0.0188)\n"}
+,{"stream_name":"stdout","time":16152.357320963,"data":"  [image_to_last] 11/50 id=vqarad_test_0060 tokens=64 IF=+0.0015 (peak layer 17: +0.0232)\n"}
+,{"stream_name":"stdout","time":16152.35732532,"data":"  [image_to_last] 12/50 id=vqarad_test_0061 tokens=64 IF=-0.0005 (peak layer 11: +0.0070)\n"}
+,{"stream_name":"stdout","time":16152.357329457,"data":"  [image_to_last] 13/50 id=vqarad_test_0062 tokens=64 IF=+0.0024 (peak layer 24: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.357334028,"data":"  [image_to_last] 14/50 id=vqarad_test_0063 tokens=48 IF=-0.0038 (peak layer 17: +0.0111)\n"}
+,{"stream_name":"stdout","time":16152.357338385,"data":"  [image_to_last] 15/50 id=vqarad_test_0064 tokens=64 IF=-0.0033 (peak layer 17: +0.0168)\n"}
+,{"stream_name":"stdout","time":16152.357342602,"data":"  [image_to_last] 16/50 id=vqarad_test_0065 tokens=64 IF=-0.0003 (peak layer 17: +0.0257)\n"}
+,{"stream_name":"stdout","time":16152.357364863,"data":"  [image_to_last] 17/50 id=vqarad_test_0066 tokens=64 IF=-0.0002 (peak layer 17: +0.0250)\n"}
+,{"stream_name":"stdout","time":16152.357369749,"data":"  [image_to_last] 18/50 id=vqarad_test_0067 tokens=64 IF=-0.0020 (peak layer 11: +0.0082)\n"}
+,{"stream_name":"stdout","time":16152.357374433,"data":"  [image_to_last] 19/50 id=vqarad_test_0068 tokens=64 IF=-0.0022 (peak layer 17: +0.0117)\n"}
+,{"stream_name":"stdout","time":16152.357378901,"data":"  [image_to_last] 20/50 id=vqarad_test_0069 tokens=64 IF=+0.0001 (peak layer 17: +0.0147)\n"}
+,{"stream_name":"stdout","time":16152.35738352,"data":"  [image_to_last] 21/50 id=vqarad_test_0070 tokens=64 IF=+0.0016 (peak layer 5: +0.0068)\n"}
+,{"stream_name":"stdout","time":16152.357389998,"data":"  [image_to_last] 22/50 id=vqarad_test_0071 tokens=26 IF=+0.0033 (peak layer 21: +0.0077)\n"}
+,{"stream_name":"stdout","time":16152.357394593,"data":"  [image_to_last] 23/50 id=vqarad_test_0072 tokens=26 IF=-0.0013 (peak layer 21: +0.0089)\n"}
+,{"stream_name":"stdout","time":16152.357399036,"data":"  [image_to_last] 24/50 id=vqarad_test_0073 tokens=64 IF=+0.0004 (peak layer 14: +0.0067)\n"}
+,{"stream_name":"stdout","time":16152.357403695,"data":"  [image_to_last] 25/50 id=vqarad_test_0074 tokens=64 IF=+0.0012 (peak layer 17: +0.0059)\n"}
+,{"stream_name":"stdout","time":16152.357408457,"data":"  [image_to_last] 26/50 id=vqarad_test_0075 tokens=64 IF=+0.0004 (peak layer 6: +0.0055)\n"}
+,{"stream_name":"stdout","time":16152.357412821,"data":"  [image_to_last] 27/50 id=vqarad_test_0076 tokens=43 IF=-0.0004 (peak layer 16: +0.0139)\n"}
+,{"stream_name":"stdout","time":16152.357420721,"data":"  [image_to_last] 28/50 id=vqarad_test_0077 tokens=50 IF=+0.0008 (peak layer 16: +0.0072)\n"}
+,{"stream_name":"stdout","time":16152.357425483,"data":"  [image_to_last] 29/50 id=vqarad_test_0078 tokens=23 IF=-0.0032 (peak layer 26: +0.0119)\n"}
+,{"stream_name":"stdout","time":16152.357430323,"data":"  [image_to_last] 30/50 id=vqarad_test_0079 tokens=64 IF=-0.0009 (peak layer 19: +0.0071)\n"}
+,{"stream_name":"stdout","time":16152.357438633,"data":"  [image_to_last] 31/50 id=vqarad_test_0080 tokens=64 IF=-0.0002 (peak layer 15: +0.0059)\n"}
+,{"stream_name":"stdout","time":16152.357443155,"data":"  [image_to_last] 32/50 id=vqarad_test_0081 tokens=26 IF=-0.0003 (peak layer 21: +0.0189)\n"}
+,{"stream_name":"stdout","time":16152.357447846,"data":"  [image_to_last] 33/50 id=vqarad_test_0082 tokens=20 IF=-0.0030 (peak layer 32: +0.0013)\n"}
+,{"stream_name":"stdout","time":16152.357452625,"data":"  [image_to_last] 34/50 id=vqarad_test_0083 tokens=64 IF=-0.0001 (peak layer 17: +0.0215)\n"}
+,{"stream_name":"stdout","time":16152.357457091,"data":"  [image_to_last] 35/50 id=vqarad_test_0084 tokens=64 IF=-0.0015 (peak layer 17: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.357461995,"data":"  [image_to_last] 36/50 id=vqarad_test_0085 tokens=64 IF=-0.0037 (peak layer 17: +0.0257)\n"}
+,{"stream_name":"stdout","time":16152.357466728,"data":"  [image_to_last] 37/50 id=vqarad_test_0086 tokens=64 IF=+0.0035 (peak layer 15: +0.0075)\n"}
+,{"stream_name":"stdout","time":16152.357471064,"data":"  [image_to_last] 38/50 id=vqarad_test_0087 tokens=64 IF=-0.0016 (peak layer 11: +0.0072)\n"}
+,{"stream_name":"stdout","time":16152.357475463,"data":"  [image_to_last] 39/50 id=vqarad_test_0088 tokens=21 IF=+0.0046 (peak layer 30: +0.0086)\n"}
+,{"stream_name":"stdout","time":16152.357480019,"data":"  [image_to_last] 40/50 id=vqarad_test_0089 tokens=37 IF=+0.0040 (peak layer 12: +0.0108)\n"}
+,{"stream_name":"stdout","time":16152.357484575,"data":"  [image_to_last] 41/50 id=vqarad_test_0090 tokens=33 IF=+0.0018 (peak layer 17: +0.0209)\n"}
+,{"stream_name":"stdout","time":16152.357489267,"data":"  [image_to_last] 42/50 id=vqarad_test_0091 tokens=64 IF=+0.0008 (peak layer 21: +0.0058)\n"}
+,{"stream_name":"stdout","time":16152.357493769,"data":"  [image_to_last] 43/50 id=vqarad_test_0092 tokens=64 IF=-0.0003 (peak layer 17: +0.0139)\n"}
+,{"stream_name":"stdout","time":16152.357498565,"data":"  [image_to_last] 44/50 id=vqarad_test_0093 tokens=64 IF=-0.0016 (peak layer 17: +0.0083)\n"}
+,{"stream_name":"stdout","time":16152.357503879,"data":"  [image_to_last] 45/50 id=vqarad_test_0094 tokens=64 IF=+0.0002 (peak layer 17: +0.0073)\n"}
+,{"stream_name":"stdout","time":16152.357508586,"data":"  [image_to_last] 46/50 id=vqarad_test_0095 tokens=64 IF=-0.0017 (peak layer 17: +0.0096)\n"}
+,{"stream_name":"stdout","time":16152.357513208,"data":"  [image_to_last] 47/50 id=vqarad_test_0096 tokens=39 IF=+0.0015 (peak layer 21: +0.0097)\n"}
+,{"stream_name":"stdout","time":16152.35751751,"data":"  [image_to_last] 48/50 id=vqarad_test_0097 tokens=32 IF=-0.0001 (peak layer 31: +0.0107)\n"}
+,{"stream_name":"stdout","time":16152.357522028,"data":"  [image_to_last] 49/50 id=vqarad_test_0098 tokens=24 IF=-0.0029 (peak layer 6: +0.0098)\n"}
+,{"stream_name":"stdout","time":16152.357526684,"data":"  [image_to_last] 50/50 id=vqarad_test_0099 tokens=64 IF=-0.0022 (peak layer 11: +0.0045)\n"}
+,{"stream_name":"stdout","time":16152.357531454,"data":"[FG-TRACER] image_to_last summary:\n"}
+,{"stream_name":"stdout","time":16152.35753567,"data":"  accuracy (loose)  : 0.580  (29/50)\n"}
+,{"stream_name":"stdout","time":16152.357540018,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":16152.357544261,"data":"  closed (yes/no)   : 0.778  (n=27)\n"}
+,{"stream_name":"stdout","time":16152.357557318,"data":"  open-ended        : 0.348  (n=23)\n"}
+,{"stream_name":"stdout","time":16152.357561765,"data":"  mean log-prob     : -0.251\n"}
+,{"stream_name":"stdout","time":16152.35756593,"data":"  log-prob correct  : -0.260   incorrect: -0.238  (Δ=-0.021)\n"}
+,{"stream_name":"stdout","time":16152.357571385,"data":"[FG-TRACER] wrote outputs_medgemma_g1/results_vqa_rad_image_to_last_k1.json  (9399.1s)\n"}
+,{"stream_name":"stdout","time":16152.357579835,"data":"  [question_to_last] 1/50 id=vqarad_test_0050 tokens=64 IF=+0.0082 (peak layer 27: +0.0345)\n"}
+,{"stream_name":"stdout","time":16152.357584949,"data":"  [question_to_last] 2/50 id=vqarad_test_0051 tokens=64 IF=+0.0075 (peak layer 29: +0.0187)\n"}
+,{"stream_name":"stdout","time":16152.357589645,"data":"  [question_to_last] 3/50 id=vqarad_test_0052 tokens=64 IF=+0.0080 (peak layer 29: +0.0185)\n"}
+,{"stream_name":"stdout","time":16152.357594145,"data":"  [question_to_last] 4/50 id=vqarad_test_0053 tokens=64 IF=+0.0022 (peak layer 11: +0.0169)\n"}
+,{"stream_name":"stdout","time":16152.357598822,"data":"  [question_to_last] 5/50 id=vqarad_test_0054 tokens=64 IF=-0.0069 (peak layer 29: +0.0151)\n"}
+,{"stream_name":"stdout","time":16152.357603574,"data":"  [question_to_last] 6/50 id=vqarad_test_0055 tokens=36 IF=-0.0061 (peak layer 17: +0.0368)\n"}
+,{"stream_name":"stdout","time":16152.357607994,"data":"  [question_to_last] 7/50 id=vqarad_test_0056 tokens=20 IF=-0.0058 (peak layer 29: +0.0344)\n"}
+,{"stream_name":"stdout","time":16152.35761249,"data":"  [question_to_last] 8/50 id=vqarad_test_0057 tokens=39 IF=+0.0107 (peak layer 17: +0.0563)\n"}
+,{"stream_name":"stdout","time":16152.357617362,"data":"  [question_to_last] 9/50 id=vqarad_test_0058 tokens=55 IF=-0.0012 (peak layer 29: +0.0248)\n"}
+,{"stream_name":"stdout","time":16152.357622007,"data":"  [question_to_last] 10/50 id=vqarad_test_0059 tokens=64 IF=+0.0102 (peak layer 11: +0.0252)\n"}
+,{"stream_name":"stdout","time":16152.357626451,"data":"  [question_to_last] 11/50 id=vqarad_test_0060 tokens=64 IF=-0.0026 (peak layer 27: +0.0311)\n"}
+,{"stream_name":"stdout","time":16152.357631241,"data":"  [question_to_last] 12/50 id=vqarad_test_0061 tokens=64 IF=+0.0011 (peak layer 17: +0.0250)\n"}
+,{"stream_name":"stdout","time":16152.357636381,"data":"  [question_to_last] 13/50 id=vqarad_test_0062 tokens=64 IF=+0.0068 (peak layer 23: +0.0249)\n"}
+,{"stream_name":"stdout","time":16152.357641073,"data":"  [question_to_last] 14/50 id=vqarad_test_0063 tokens=48 IF=+0.0053 (peak layer 29: +0.0428)\n"}
+,{"stream_name":"stdout","time":16152.357645857,"data":"  [question_to_last] 15/50 id=vqarad_test_0064 tokens=64 IF=-0.0019 (peak layer 27: +0.0176)\n"}
+,{"stream_name":"stdout","time":16152.357650206,"data":"  [question_to_last] 16/50 id=vqarad_test_0065 tokens=64 IF=+0.0076 (peak layer 27: +0.0359)\n"}
+,{"stream_name":"stdout","time":16152.357654623,"data":"  [question_to_last] 17/50 id=vqarad_test_0066 tokens=64 IF=+0.0008 (peak layer 27: +0.0200)\n"}
+,{"stream_name":"stdout","time":16152.357659402,"data":"  [question_to_last] 18/50 id=vqarad_test_0067 tokens=64 IF=+0.0012 (peak layer 16: +0.0132)\n"}
+,{"stream_name":"stdout","time":16152.357664042,"data":"  [question_to_last] 19/50 id=vqarad_test_0068 tokens=64 IF=+0.0032 (peak layer 11: +0.0216)\n"}
+,{"stream_name":"stdout","time":16152.357668845,"data":"  [question_to_last] 20/50 id=vqarad_test_0069 tokens=64 IF=+0.0018 (peak layer 29: +0.0225)\n"}
+,{"stream_name":"stdout","time":16152.35767357,"data":"  [question_to_last] 21/50 id=vqarad_test_0070 tokens=64 IF=+0.0042 (peak layer 16: +0.0310)\n"}
+,{"stream_name":"stdout","time":16152.357678163,"data":"  [question_to_last] 22/50 id=vqarad_test_0071 tokens=26 IF=+0.0031 (peak layer 17: +0.0494)\n"}
+,{"stream_name":"stdout","time":16152.357682676,"data":"  [question_to_last] 23/50 id=vqarad_test_0072 tokens=26 IF=+0.0005 (peak layer 17: +0.0478)\n"}
+,{"stream_name":"stdout","time":16152.357687469,"data":"  [question_to_last] 24/50 id=vqarad_test_0073 tokens=64 IF=+0.0066 (peak layer 17: +0.0272)\n"}
+,{"stream_name":"stdout","time":16152.357692087,"data":"  [question_to_last] 25/50 id=vqarad_test_0074 tokens=64 IF=-0.0028 (peak layer 29: +0.0226)\n"}
+,{"stream_name":"stdout","time":16152.357700059,"data":"  [question_to_last] 26/50 id=vqarad_test_0075 tokens=64 IF=+0.0089 (peak layer 17: +0.0432)\n"}
+,{"stream_name":"stdout","time":16152.357704777,"data":"  [question_to_last] 27/50 id=vqarad_test_0076 tokens=43 IF=-0.0002 (peak layer 29: +0.0477)\n"}
+,{"stream_name":"stdout","time":16152.357709517,"data":"  [question_to_last] 28/50 id=vqarad_test_0077 tokens=50 IF=+0.0049 (peak layer 29: +0.0340)\n"}
+,{"stream_name":"stdout","time":16152.357714106,"data":"  [question_to_last] 29/50 id=vqarad_test_0078 tokens=23 IF=+0.0042 (peak layer 29: +0.0503)\n"}
+,{"stream_name":"stdout","time":16152.357718453,"data":"  [question_to_last] 30/50 id=vqarad_test_0079 tokens=64 IF=+0.0007 (peak layer 23: +0.0303)\n"}
+,{"stream_name":"stdout","time":16152.357723334,"data":"  [question_to_last] 31/50 id=vqarad_test_0080 tokens=64 IF=+0.0033 (peak layer 17: +0.0188)\n"}
+,{"stream_name":"stdout","time":16152.357728133,"data":"  [question_to_last] 32/50 id=vqarad_test_0081 tokens=26 IF=+0.0003 (peak layer 29: +0.0422)\n"}
+,{"stream_name":"stdout","time":16152.357732596,"data":"  [question_to_last] 33/50 id=vqarad_test_0082 tokens=20 IF=-0.0020 (peak layer 17: +0.0619)\n"}
+,{"stream_name":"stdout","time":16152.357737312,"data":"  [question_to_last] 34/50 id=vqarad_test_0083 tokens=64 IF=+0.0093 (peak layer 18: +0.0262)\n"}
+,{"stream_name":"stdout","time":17084.18397362,"data":"  [question_to_last] 35/50 id=vqarad_test_0084 tokens=64 IF=-0.0049 (peak layer 27: +0.0219)[FG-TRACER] loaded google/medgemma-4b-it | arch=gemma3 | text layers=34 | image_token_id=262144 | device=cuda | dtype=bfloat16 | quantization=none\n"}
+,{"stream_name":"stdout","time":17084.184015375,"data":"  [image_to_last] 1/50 id=vqarad_test_0000 tokens=64 IF=-0.0007 (peak layer 17: +0.0202)\n"}
+,{"stream_name":"stdout","time":17084.184020756,"data":"  [image_to_last] 2/50 id=vqarad_test_0001 tokens=64 IF=+0.0001 (peak layer 33: +0.0027)\n"}
+,{"stream_name":"stdout","time":17084.18402528,"data":"  [image_to_last] 3/50 id=vqarad_test_0002 tokens=64 IF=-0.0009 (peak layer 15: +0.0088)\n"}
+,{"stream_name":"stdout","time":17084.184029571,"data":"  [image_to_last] 4/50 id=vqarad_test_0003 tokens=53 IF=-0.0035 (peak layer 17: +0.0233)\n"}
+,{"stream_name":"stdout","time":17084.184033812,"data":"  [image_to_last] 5/50 id=vqarad_test_0004 tokens=37 IF=-0.0040 (peak layer 14: +0.0097)\n"}
+,{"stream_name":"stdout","time":17084.184038081,"data":"  [image_to_last] 6/50 id=vqarad_test_0005 tokens=29 IF=+0.0003 (peak layer 26: +0.0079)\n"}
+,{"stream_name":"stdout","time":17084.18404206,"data":"  [image_to_last] 7/50 id=vqarad_test_0006 tokens=21 IF=+0.0056 (peak layer 17: +0.0194)\n"}
+,{"stream_name":"stdout","time":17084.184046456,"data":"  [image_to_last] 8/50 id=vqarad_test_0007 tokens=45 IF=+0.0001 (peak layer 11: +0.0138)\n"}
+,{"stream_name":"stdout","time":17084.184050968,"data":"  [image_to_last] 9/50 id=vqarad_test_0008 tokens=64 IF=-0.0009 (peak layer 17: +0.0085)\n"}
+,{"stream_name":"stdout","time":17084.184055281,"data":"  [image_to_last] 10/50 id=vqarad_test_0009 tokens=28 IF=+0.0021 (peak layer 22: +0.0122)\n"}
+,{"stream_name":"stdout","time":17084.184059622,"data":"  [image_to_last] 11/50 id=vqarad_test_0010 tokens=45 IF=-0.0027 (peak layer 20: +0.0039)\n"}
+,{"stream_name":"stdout","time":17084.184063984,"data":"  [image_to_last] 12/50 id=vqarad_test_0011 tokens=64 IF=+0.0005 (peak layer 6: +0.0127)\n"}
+,{"stream_name":"stdout","time":17084.184068158,"data":"  [image_to_last] 13/50 id=vqarad_test_0012 tokens=64 IF=+0.0004 (peak layer 17: +0.0054)\n"}
+,{"stream_name":"stdout","time":17084.184072488,"data":"  [image_to_last] 14/50 id=vqarad_test_0013 tokens=58 IF=-0.0039 (peak layer 21: +0.0043)\n"}
+,{"stream_name":"stdout","time":17084.184086506,"data":"  [image_to_last] 15/50 id=vqarad_test_0014 tokens=64 IF=-0.0038 (peak layer 17: +0.0084)\n"}
+,{"stream_name":"stdout","time":17084.184090081,"data":"  [image_to_last] 16/50 id=vqarad_test_0015 tokens=64 IF=-0.0006 (peak layer 10: +0.0052)\n"}
+,{"stream_name":"stdout","time":17084.184093439,"data":"  [image_to_last] 17/50 id=vqarad_test_0016 tokens=10 IF=-0.0098 (peak layer 24: +0.0191)\n"}
+,{"stream_name":"stdout","time":17084.184096831,"data":"  [image_to_last] 18/50 id=vqarad_test_0017 tokens=64 IF=-0.0026 (peak layer 22: +0.0025)\n"}
+,{"stream_name":"stdout","time":17084.184100201,"data":"  [image_to_last] 19/50 id=vqarad_test_0018 tokens=64 IF=+0.0014 (peak layer 22: +0.0061)\n"}
+,{"stream_name":"stdout","time":17084.18410351,"data":"  [image_to_last] 20/50 id=vqarad_test_0019 tokens=61 IF=-0.0006 (peak layer 15: +0.0043)\n"}
+,{"stream_name":"stdout","time":17084.184106839,"data":"  [image_to_last] 21/50 id=vqarad_test_0020 tokens=64 IF=-0.0000 (peak layer 17: +0.0104)\n"}
+,{"stream_name":"stdout","time":17084.184111696,"data":"  [image_to_last] 22/50 id=vqarad_test_0021 tokens=64 IF=+0.0008 (peak layer 12: +0.0049)\n"}
+,{"stream_name":"stdout","time":17084.184115131,"data":"  [image_to_last] 23/50 id=vqarad_test_0022 tokens=37 IF=+0.0038 (peak layer 21: +0.0163)\n"}
+,{"stream_name":"stdout","time":17084.184118418,"data":"  [image_to_last] 24/50 id=vqarad_test_0023 tokens=64 IF=+0.0014 (peak layer 26: +0.0061)\n"}
+,{"stream_name":"stdout","time":17084.184121776,"data":"  [image_to_last] 25/50 id=vqarad_test_0024 tokens=64 IF=+0.0003 (peak layer 17: +0.0153)\n"}
+,{"stream_name":"stdout","time":17084.184125219,"data":"  [image_to_last] 26/50 id=vqarad_test_0025 tokens=64 IF=+0.0017 (peak layer 17: +0.0113)\n"}
+,{"stream_name":"stdout","time":17084.184128504,"data":"  [image_to_last] 27/50 id=vqarad_test_0026 tokens=64 IF=+0.0014 (peak layer 15: +0.0132)\n"}
+,{"stream_name":"stdout","time":17084.184131816,"data":"  [image_to_last] 28/50 id=vqarad_test_0027 tokens=64 IF=+0.0051 (peak layer 17: +0.0274)\n"}
+,{"stream_name":"stdout","time":17084.18413518,"data":"  [image_to_last] 29/50 id=vqarad_test_0028 tokens=64 IF=+0.0004 (peak layer 11: +0.0131)\n"}
+,{"stream_name":"stdout","time":17084.184138566,"data":"  [image_to_last] 30/50 id=vqarad_test_0029 tokens=64 IF=+0.0015 (peak layer 17: +0.0111)\n"}
+,{"stream_name":"stdout","time":17084.184141895,"data":"  [image_to_last] 31/50 id=vqarad_test_0030 tokens=58 IF=+0.0002 (peak layer 17: +0.0287)\n"}
+,{"stream_name":"stdout","time":17084.184145301,"data":"  [image_to_last] 32/50 id=vqarad_test_0031 tokens=57 IF=+0.0003 (peak layer 17: +0.0189)\n"}
+,{"stream_name":"stdout","time":17084.184148654,"data":"  [image_to_last] 33/50 id=vqarad_test_0032 tokens=64 IF=+0.0002 (peak layer 6: +0.0123)\n"}
+,{"stream_name":"stdout","time":17084.184152018,"data":"  [image_to_last] 34/50 id=vqarad_test_0033 tokens=64 IF=-0.0016 (peak layer 20: +0.0079)\n"}
+,{"stream_name":"stdout","time":17084.184155371,"data":"  [image_to_last] 35/50 id=vqarad_test_0034 tokens=64 IF=+0.0006 (peak layer 17: +0.0107)\n"}
+,{"stream_name":"stdout","time":17084.184174384,"data":"  [image_to_last] 36/50 id=vqarad_test_0035 tokens=64 IF=+0.0003 (peak layer 17: +0.0117)\n"}
+,{"stream_name":"stdout","time":17084.184178123,"data":"  [image_to_last] 37/50 id=vqarad_test_0036 tokens=64 IF=-0.0030 (peak layer 31: +0.0057)\n"}
+,{"stream_name":"stdout","time":17084.184181467,"data":"  [image_to_last] 38/50 id=vqarad_test_0037 tokens=64 IF=-0.0026 (peak layer 14: +0.0077)\n"}
+,{"stream_name":"stdout","time":17084.184184865,"data":"  [image_to_last] 39/50 id=vqarad_test_0038 tokens=32 IF=-0.0002 (peak layer 15: +0.0274)\n"}
+,{"stream_name":"stdout","time":17084.184188244,"data":"  [image_to_last] 40/50 id=vqarad_test_0039 tokens=51 IF=+0.0003 (peak layer 15: +0.0210)\n"}
+,{"stream_name":"stdout","time":17084.184195748,"data":"  [image_to_last] 41/50 id=vqarad_test_0040 tokens=64 IF=-0.0008 (peak layer 14: +0.0077)\n"}
+,{"stream_name":"stdout","time":17084.184199274,"data":"  [image_to_last] 42/50 id=vqarad_test_0041 tokens=64 IF=+0.0032 (peak layer 11: +0.0082)\n"}
+,{"stream_name":"stdout","time":17084.184202607,"data":"  [image_to_last] 43/50 id=vqarad_test_0042 tokens=64 IF=+0.0003 (peak layer 17: +0.0143)\n"}
+,{"stream_name":"stdout","time":17084.184206006,"data":"  [image_to_last] 44/50 id=vqarad_test_0043 tokens=64 IF=-0.0016 (peak layer 22: +0.0085)\n"}
+,{"stream_name":"stdout","time":17084.184209984,"data":"  [image_to_last] 45/50 id=vqarad_test_0044 tokens=64 IF=+0.0036 (peak layer 17: +0.0145)\n"}
+,{"stream_name":"stdout","time":17084.184213364,"data":"  [image_to_last] 46/50 id=vqarad_test_0045 tokens=29 IF=+0.0024 (peak layer 17: +0.0333)\n"}
+,{"stream_name":"stdout","time":17084.184216695,"data":"  [image_to_last] 47/50 id=vqarad_test_0046 tokens=64 IF=-0.0025 (peak layer 17: +0.0356)\n"}
+,{"stream_name":"stdout","time":17084.184220065,"data":"  [image_to_last] 48/50 id=vqarad_test_0047 tokens=64 IF=-0.0020 (peak layer 9: +0.0046)\n"}
+,{"stream_name":"stdout","time":17084.184223474,"data":"  [image_to_last] 49/50 id=vqarad_test_0048 tokens=64 IF=+0.0004 (peak layer 17: +0.0090)\n"}
+,{"stream_name":"stdout","time":17084.184226815,"data":"  [image_to_last] 50/50 id=vqarad_test_0049 tokens=64 IF=-0.0018 (peak layer 17: +0.0097)\n"}
+,{"stream_name":"stdout","time":17084.184230543,"data":"[FG-TRACER] image_to_last summary:\n"}
+,{"stream_name":"stdout","time":17084.184233848,"data":"  accuracy (loose)  : 0.660  (33/50)\n"}
+,{"stream_name":"stdout","time":17084.184237129,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":17084.184240375,"data":"  closed (yes/no)   : 0.750  (n=32)\n"}
+,{"stream_name":"stdout","time":17084.184243553,"data":"  open-ended        : 0.500  (n=18)\n"}
+,{"stream_name":"stdout","time":17084.18424686,"data":"  mean log-prob     : -0.247\n"}
+,{"stream_name":"stdout","time":17084.184250046,"data":"  log-prob correct  : -0.257   incorrect: -0.226  (Δ=-0.031)\n"}
+,{"stream_name":"stdout","time":17084.184253922,"data":"[FG-TRACER] wrote outputs_medgemma_g0/results_vqa_rad_image_to_last_k1.json  (9968.8s)\n"}
+,{"stream_name":"stdout","time":17084.184257258,"data":"  [question_to_last] 1/50 id=vqarad_test_0000 tokens=64 IF=-0.0015 (peak layer 9: +0.0168)\n"}
+,{"stream_name":"stdout","time":17084.18426059,"data":"  [question_to_last] 2/50 id=vqarad_test_0001 tokens=64 IF=+0.0139 (peak layer 11: +0.0476)\n"}
+,{"stream_name":"stdout","time":17084.18426392,"data":"  [question_to_last] 3/50 id=vqarad_test_0002 tokens=64 IF=+0.0008 (peak layer 29: +0.0287)\n"}
+,{"stream_name":"stdout","time":17084.184267237,"data":"  [question_to_last] 4/50 id=vqarad_test_0003 tokens=53 IF=+0.0065 (peak layer 21: +0.0285)\n"}
+,{"stream_name":"stdout","time":17084.184270602,"data":"  [question_to_last] 5/50 id=vqarad_test_0004 tokens=37 IF=-0.0004 (peak layer 33: +0.0206)\n"}
+,{"stream_name":"stdout","time":17084.18427394,"data":"  [question_to_last] 6/50 id=vqarad_test_0005 tokens=29 IF=-0.0034 (peak layer 23: +0.0379)\n"}
+,{"stream_name":"stdout","time":17084.184277225,"data":"  [question_to_last] 7/50 id=vqarad_test_0006 tokens=21 IF=+0.0205 (peak layer 23: +0.0573)\n"}
+,{"stream_name":"stdout","time":17084.184280647,"data":"  [question_to_last] 8/50 id=vqarad_test_0007 tokens=45 IF=+0.0026 (peak layer 17: +0.0292)\n"}
+,{"stream_name":"stdout","time":17084.18428403,"data":"  [question_to_last] 9/50 id=vqarad_test_0008 tokens=64 IF=-0.0017 (peak layer 16: +0.0172)\n"}
+,{"stream_name":"stdout","time":17084.184287459,"data":"  [question_to_last] 10/50 id=vqarad_test_0009 tokens=28 IF=+0.0029 (peak layer 15: +0.0338)\n"}
+,{"stream_name":"stdout","time":17084.18429407,"data":"  [question_to_last] 11/50 id=vqarad_test_0010 tokens=45 IF=-0.0004 (peak layer 18: +0.0585)\n"}
+,{"stream_name":"stdout","time":17084.1842976,"data":"  [question_to_last] 12/50 id=vqarad_test_0011 tokens=64 IF=-0.0040 (peak layer 7: +0.0164)\n"}
+,{"stream_name":"stdout","time":17084.184301555,"data":"  [question_to_last] 13/50 id=vqarad_test_0012 tokens=64 IF=+0.0033 (peak layer 12: +0.0217)\n"}
+,{"stream_name":"stdout","time":17084.184304994,"data":"  [question_to_last] 14/50 id=vqarad_test_0013 tokens=58 IF=+0.0106 (peak layer 29: +0.0328)\n"}
+,{"stream_name":"stdout","time":17084.184308299,"data":"  [question_to_last] 15/50 id=vqarad_test_0014 tokens=64 IF=-0.0027 (peak layer 19: +0.0205)\n"}
+,{"stream_name":"stdout","time":17084.184311634,"data":"  [question_to_last] 16/50 id=vqarad_test_0015 tokens=64 IF=+0.0005 (peak layer 29: +0.0276)\n"}
+,{"stream_name":"stdout","time":17084.184314944,"data":"  [question_to_last] 17/50 id=vqarad_test_0016 tokens=10 IF=+0.0179 (peak layer 27: +0.0504)\n"}
+,{"stream_name":"stdout","time":17084.184318282,"data":"  [question_to_last] 18/50 id=vqarad_test_0017 tokens=64 IF=+0.0039 (peak layer 33: +0.0196)\n"}
+,{"stream_name":"stdout","time":17084.184321636,"data":"  [question_to_last] 19/50 id=vqarad_test_0018 tokens=64 IF=+0.0041 (peak layer 17: +0.0186)\n"}
+,{"stream_name":"stdout","time":17084.184325,"data":"  [question_to_last] 20/50 id=vqarad_test_0019 tokens=61 IF=-0.0034 (peak layer 23: +0.0387)\n"}
+,{"stream_name":"stdout","time":17084.184328451,"data":"  [question_to_last] 21/50 id=vqarad_test_0020 tokens=64 IF=+0.0067 (peak layer 17: +0.0365)\n"}
+,{"stream_name":"stdout","time":17084.184331767,"data":"  [question_to_last] 22/50 id=vqarad_test_0021 tokens=64 IF=+0.0002 (peak layer 17: +0.0141)\n"}
+,{"stream_name":"stdout","time":17084.184335253,"data":"  [question_to_last] 23/50 id=vqarad_test_0022 tokens=37 IF=+0.0157 (peak layer 20: +0.0328)\n"}
+,{"stream_name":"stdout","time":17084.184338674,"data":"  [question_to_last] 24/50 id=vqarad_test_0023 tokens=64 IF=+0.0002 (peak layer 27: +0.0341)\n"}
+,{"stream_name":"stdout","time":17084.184342013,"data":"  [question_to_last] 25/50 id=vqarad_test_0024 tokens=64 IF=+0.0024 (peak layer 29: +0.0323)\n"}
+,{"stream_name":"stdout","time":17084.184345444,"data":"  [question_to_last] 26/50 id=vqarad_test_0025 tokens=64 IF=+0.0020 (peak layer 27: +0.0252)\n"}
+,{"stream_name":"stdout","time":17084.184348842,"data":"  [question_to_last] 27/50 id=vqarad_test_0026 tokens=64 IF=+0.0030 (peak layer 29: +0.0312)\n"}
+,{"stream_name":"stdout","time":17084.184352238,"data":"  [question_to_last] 28/50 id=vqarad_test_0027 tokens=64 IF=-0.0011 (peak layer 29: +0.0290)\n"}
+,{"stream_name":"stdout","time":17084.184355547,"data":"  [question_to_last] 29/50 id=vqarad_test_0028 tokens=64 IF=+0.0096 (peak layer 31: +0.0164)\n"}
+,{"stream_name":"stdout","time":17084.184358924,"data":"  [question_to_last] 30/50 id=vqarad_test_0029 tokens=64 IF=+0.0045 (peak layer 19: +0.0255)\n"}
+,{"stream_name":"stdout","time":17084.184362252,"data":"  [question_to_last] 31/50 id=vqarad_test_0030 tokens=58 IF=-0.0040 (peak layer 13: +0.0201)\n"}
+,{"stream_name":"stdout","time":17084.184365589,"data":"  [question_to_last] 32/50 id=vqarad_test_0031 tokens=57 IF=+0.0001 (peak layer 22: +0.0236)\n"}
+,{"stream_name":"stdout","time":17084.184368933,"data":"  [question_to_last] 33/50 id=vqarad_test_0032 tokens=64 IF=+0.0052 (peak layer 17: +0.0282)\n"}
+,{"stream_name":"stdout","time":17084.184372291,"data":"  [question_to_last] 34/50 id=vqarad_test_0033 tokens=64 IF=+0.0028 (peak layer 29: +0.0508)\n"}
+,{"stream_name":"stdout","time":17084.392800884,"data":"  [question_to_last] 35/50 id=vqarad_test_0034 tokens=64 IF=+0.0016 (peak layer 23: +0.0225)[FG-TRACER] loaded google/medgemma-4b-it | arch=gemma3 | text layers=34 | image_token_id=262144 | device=cuda | dtype=bfloat16 | quantization=none\n"}
+,{"stream_name":"stdout","time":17084.392835102,"data":"  [image_to_last] 1/50 id=vqarad_test_0000 tokens=64 IF=-0.0007 (peak layer 17: +0.0202)\n"}
+,{"stream_name":"stdout","time":17084.39283966,"data":"  [image_to_last] 2/50 id=vqarad_test_0001 tokens=64 IF=+0.0001 (peak layer 33: +0.0027)\n"}
+,{"stream_name":"stdout","time":17084.392843406,"data":"  [image_to_last] 3/50 id=vqarad_test_0002 tokens=64 IF=-0.0009 (peak layer 15: +0.0088)\n"}
+,{"stream_name":"stdout","time":17084.392847008,"data":"  [image_to_last] 4/50 id=vqarad_test_0003 tokens=53 IF=-0.0035 (peak layer 17: +0.0233)\n"}
+,{"stream_name":"stdout","time":17084.392850653,"data":"  [image_to_last] 5/50 id=vqarad_test_0004 tokens=37 IF=-0.0040 (peak layer 14: +0.0097)\n"}
+,{"stream_name":"stdout","time":17084.392854372,"data":"  [image_to_last] 6/50 id=vqarad_test_0005 tokens=29 IF=+0.0003 (peak layer 26: +0.0079)\n"}
+,{"stream_name":"stdout","time":17084.392858017,"data":"  [image_to_last] 7/50 id=vqarad_test_0006 tokens=21 IF=+0.0056 (peak layer 17: +0.0194)\n"}
+,{"stream_name":"stdout","time":17084.392861637,"data":"  [image_to_last] 8/50 id=vqarad_test_0007 tokens=45 IF=+0.0001 (peak layer 11: +0.0138)\n"}
+,{"stream_name":"stdout","time":17084.39286529,"data":"  [image_to_last] 9/50 id=vqarad_test_0008 tokens=64 IF=-0.0009 (peak layer 17: +0.0085)\n"}
+,{"stream_name":"stdout","time":17084.392868916,"data":"  [image_to_last] 10/50 id=vqarad_test_0009 tokens=28 IF=+0.0021 (peak layer 22: +0.0122)\n"}
+,{"stream_name":"stdout","time":17084.392872578,"data":"  [image_to_last] 11/50 id=vqarad_test_0010 tokens=45 IF=-0.0027 (peak layer 20: +0.0039)\n"}
+,{"stream_name":"stdout","time":17084.392876218,"data":"  [image_to_last] 12/50 id=vqarad_test_0011 tokens=64 IF=+0.0005 (peak layer 6: +0.0127)\n"}
+,{"stream_name":"stdout","time":17084.392879844,"data":"  [image_to_last] 13/50 id=vqarad_test_0012 tokens=64 IF=+0.0004 (peak layer 17: +0.0054)\n"}
+,{"stream_name":"stdout","time":17084.392883459,"data":"  [image_to_last] 14/50 id=vqarad_test_0013 tokens=58 IF=-0.0039 (peak layer 21: +0.0043)\n"}
+,{"stream_name":"stdout","time":17084.392887018,"data":"  [image_to_last] 15/50 id=vqarad_test_0014 tokens=64 IF=-0.0038 (peak layer 17: +0.0084)\n"}
+,{"stream_name":"stdout","time":17084.392890591,"data":"  [image_to_last] 16/50 id=vqarad_test_0015 tokens=64 IF=-0.0006 (peak layer 10: +0.0052)\n"}
+,{"stream_name":"stdout","time":17084.392894164,"data":"  [image_to_last] 17/50 id=vqarad_test_0016 tokens=10 IF=-0.0098 (peak layer 24: +0.0191)\n"}
+,{"stream_name":"stdout","time":17084.392897755,"data":"  [image_to_last] 18/50 id=vqarad_test_0017 tokens=64 IF=-0.0026 (peak layer 22: +0.0025)\n"}
+,{"stream_name":"stdout","time":17084.392901307,"data":"  [image_to_last] 19/50 id=vqarad_test_0018 tokens=64 IF=+0.0014 (peak layer 22: +0.0061)\n"}
+,{"stream_name":"stdout","time":17084.392904861,"data":"  [image_to_last] 20/50 id=vqarad_test_0019 tokens=61 IF=-0.0006 (peak layer 15: +0.0043)\n"}
+,{"stream_name":"stdout","time":17084.392908367,"data":"  [image_to_last] 21/50 id=vqarad_test_0020 tokens=64 IF=-0.0000 (peak layer 17: +0.0104)\n"}
+,{"stream_name":"stdout","time":17084.392913247,"data":"  [image_to_last] 22/50 id=vqarad_test_0021 tokens=64 IF=+0.0008 (peak layer 12: +0.0049)\n"}
+,{"stream_name":"stdout","time":17084.392917882,"data":"  [image_to_last] 23/50 id=vqarad_test_0022 tokens=37 IF=+0.0038 (peak layer 21: +0.0163)\n"}
+,{"stream_name":"stdout","time":17084.392921532,"data":"  [image_to_last] 24/50 id=vqarad_test_0023 tokens=64 IF=+0.0014 (peak layer 26: +0.0061)\n"}
+,{"stream_name":"stdout","time":17084.392925027,"data":"  [image_to_last] 25/50 id=vqarad_test_0024 tokens=64 IF=+0.0003 (peak layer 17: +0.0153)\n"}
+,{"stream_name":"stdout","time":17084.39293179,"data":"  [image_to_last] 26/50 id=vqarad_test_0025 tokens=64 IF=+0.0017 (peak layer 17: +0.0113)\n"}
+,{"stream_name":"stdout","time":17084.392935527,"data":"  [image_to_last] 27/50 id=vqarad_test_0026 tokens=64 IF=+0.0014 (peak layer 15: +0.0132)\n"}
+,{"stream_name":"stdout","time":17084.392939149,"data":"  [image_to_last] 28/50 id=vqarad_test_0027 tokens=64 IF=+0.0051 (peak layer 17: +0.0274)\n"}
+,{"stream_name":"stdout","time":17084.392942733,"data":"  [image_to_last] 29/50 id=vqarad_test_0028 tokens=64 IF=+0.0004 (peak layer 11: +0.0131)\n"}
+,{"stream_name":"stdout","time":17084.392946276,"data":"  [image_to_last] 30/50 id=vqarad_test_0029 tokens=64 IF=+0.0015 (peak layer 17: +0.0111)\n"}
+,{"stream_name":"stdout","time":17084.392949821,"data":"  [image_to_last] 31/50 id=vqarad_test_0030 tokens=58 IF=+0.0002 (peak layer 17: +0.0287)\n"}
+,{"stream_name":"stdout","time":17084.392953435,"data":"  [image_to_last] 32/50 id=vqarad_test_0031 tokens=57 IF=+0.0003 (peak layer 17: +0.0189)\n"}
+,{"stream_name":"stdout","time":17084.392957035,"data":"  [image_to_last] 33/50 id=vqarad_test_0032 tokens=64 IF=+0.0002 (peak layer 6: +0.0123)\n"}
+,{"stream_name":"stdout","time":17084.392960567,"data":"  [image_to_last] 34/50 id=vqarad_test_0033 tokens=64 IF=-0.0016 (peak layer 20: +0.0079)\n"}
+,{"stream_name":"stdout","time":17084.392964187,"data":"  [image_to_last] 35/50 id=vqarad_test_0034 tokens=64 IF=+0.0006 (peak layer 17: +0.0107)\n"}
+,{"stream_name":"stdout","time":17084.392967781,"data":"  [image_to_last] 36/50 id=vqarad_test_0035 tokens=64 IF=+0.0003 (peak layer 17: +0.0117)\n"}
+,{"stream_name":"stdout","time":17084.392971331,"data":"  [image_to_last] 37/50 id=vqarad_test_0036 tokens=64 IF=-0.0030 (peak layer 31: +0.0057)\n"}
+,{"stream_name":"stdout","time":17084.39297527,"data":"  [image_to_last] 38/50 id=vqarad_test_0037 tokens=64 IF=-0.0026 (peak layer 14: +0.0077)\n"}
+,{"stream_name":"stdout","time":17084.392978925,"data":"  [image_to_last] 39/50 id=vqarad_test_0038 tokens=32 IF=-0.0002 (peak layer 15: +0.0274)\n"}
+,{"stream_name":"stdout","time":17084.392982456,"data":"  [image_to_last] 40/50 id=vqarad_test_0039 tokens=51 IF=+0.0003 (peak layer 15: +0.0210)\n"}
+,{"stream_name":"stdout","time":17084.392986001,"data":"  [image_to_last] 41/50 id=vqarad_test_0040 tokens=64 IF=-0.0008 (peak layer 14: +0.0077)\n"}
+,{"stream_name":"stdout","time":17084.392989597,"data":"  [image_to_last] 42/50 id=vqarad_test_0041 tokens=64 IF=+0.0032 (peak layer 11: +0.0082)\n"}
+,{"stream_name":"stdout","time":17084.392993277,"data":"  [image_to_last] 43/50 id=vqarad_test_0042 tokens=64 IF=+0.0003 (peak layer 17: +0.0143)\n"}
+,{"stream_name":"stdout","time":17084.392996858,"data":"  [image_to_last] 44/50 id=vqarad_test_0043 tokens=64 IF=-0.0016 (peak layer 22: +0.0085)\n"}
+,{"stream_name":"stdout","time":17084.393000747,"data":"  [image_to_last] 45/50 id=vqarad_test_0044 tokens=64 IF=+0.0036 (peak layer 17: +0.0145)\n"}
+,{"stream_name":"stdout","time":17084.393004391,"data":"  [image_to_last] 46/50 id=vqarad_test_0045 tokens=29 IF=+0.0024 (peak layer 17: +0.0333)\n"}
+,{"stream_name":"stdout","time":17084.39300796,"data":"  [image_to_last] 47/50 id=vqarad_test_0046 tokens=64 IF=-0.0025 (peak layer 17: +0.0356)\n"}
+,{"stream_name":"stdout","time":17084.393011545,"data":"  [image_to_last] 48/50 id=vqarad_test_0047 tokens=64 IF=-0.0020 (peak layer 9: +0.0046)\n"}
+,{"stream_name":"stdout","time":17084.393015199,"data":"  [image_to_last] 49/50 id=vqarad_test_0048 tokens=64 IF=+0.0004 (peak layer 17: +0.0090)\n"}
+,{"stream_name":"stdout","time":17084.393018819,"data":"  [image_to_last] 50/50 id=vqarad_test_0049 tokens=64 IF=-0.0018 (peak layer 17: +0.0097)\n"}
+,{"stream_name":"stdout","time":17084.393025399,"data":"[FG-TRACER] image_to_last summary:\n"}
+,{"stream_name":"stdout","time":17084.393029125,"data":"  accuracy (loose)  : 0.660  (33/50)\n"}
+,{"stream_name":"stdout","time":17084.393032623,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":17084.393036042,"data":"  closed (yes/no)   : 0.750  (n=32)\n"}
+,{"stream_name":"stdout","time":17084.393039508,"data":"  open-ended        : 0.500  (n=18)\n"}
+,{"stream_name":"stdout","time":17084.393043023,"data":"  mean log-prob     : -0.247\n"}
+,{"stream_name":"stdout","time":17084.393046732,"data":"  log-prob correct  : -0.257   incorrect: -0.226  (Δ=-0.031)\n"}
+,{"stream_name":"stdout","time":17084.393050792,"data":"[FG-TRACER] wrote outputs_medgemma_g0/results_vqa_rad_image_to_last_k1.json  (9968.8s)\n"}
+,{"stream_name":"stdout","time":17084.393054459,"data":"  [question_to_last] 1/50 id=vqarad_test_0000 tokens=64 IF=-0.0015 (peak layer 9: +0.0168)\n"}
+,{"stream_name":"stdout","time":17084.393058042,"data":"  [question_to_last] 2/50 id=vqarad_test_0001 tokens=64 IF=+0.0139 (peak layer 11: +0.0476)\n"}
+,{"stream_name":"stdout","time":17084.393061687,"data":"  [question_to_last] 3/50 id=vqarad_test_0002 tokens=64 IF=+0.0008 (peak layer 29: +0.0287)\n"}
+,{"stream_name":"stdout","time":17084.393065298,"data":"  [question_to_last] 4/50 id=vqarad_test_0003 tokens=53 IF=+0.0065 (peak layer 21: +0.0285)\n"}
+,{"stream_name":"stdout","time":17084.393068929,"data":"  [question_to_last] 5/50 id=vqarad_test_0004 tokens=37 IF=-0.0004 (peak layer 33: +0.0206)\n"}
+,{"stream_name":"stdout","time":17084.393072559,"data":"  [question_to_last] 6/50 id=vqarad_test_0005 tokens=29 IF=-0.0034 (peak layer 23: +0.0379)\n"}
+,{"stream_name":"stdout","time":17084.393076149,"data":"  [question_to_last] 7/50 id=vqarad_test_0006 tokens=21 IF=+0.0205 (peak layer 23: +0.0573)\n"}
+,{"stream_name":"stdout","time":17084.393079728,"data":"  [question_to_last] 8/50 id=vqarad_test_0007 tokens=45 IF=+0.0026 (peak layer 17: +0.0292)\n"}
+,{"stream_name":"stdout","time":17084.393083333,"data":"  [question_to_last] 9/50 id=vqarad_test_0008 tokens=64 IF=-0.0017 (peak layer 16: +0.0172)\n"}
+,{"stream_name":"stdout","time":17084.393086942,"data":"  [question_to_last] 10/50 id=vqarad_test_0009 tokens=28 IF=+0.0029 (peak layer 15: +0.0338)\n"}
+,{"stream_name":"stdout","time":17084.393090612,"data":"  [question_to_last] 11/50 id=vqarad_test_0010 tokens=45 IF=-0.0004 (peak layer 18: +0.0585)\n"}
+,{"stream_name":"stdout","time":17084.393094246,"data":"  [question_to_last] 12/50 id=vqarad_test_0011 tokens=64 IF=-0.0040 (peak layer 7: +0.0164)\n"}
+,{"stream_name":"stdout","time":17084.393098257,"data":"  [question_to_last] 13/50 id=vqarad_test_0012 tokens=64 IF=+0.0033 (peak layer 12: +0.0217)\n"}
+,{"stream_name":"stdout","time":17084.393101937,"data":"  [question_to_last] 14/50 id=vqarad_test_0013 tokens=58 IF=+0.0106 (peak layer 29: +0.0328)\n"}
+,{"stream_name":"stdout","time":17084.393105578,"data":"  [question_to_last] 15/50 id=vqarad_test_0014 tokens=64 IF=-0.0027 (peak layer 19: +0.0205)\n"}
+,{"stream_name":"stdout","time":17084.393109155,"data":"  [question_to_last] 16/50 id=vqarad_test_0015 tokens=64 IF=+0.0005 (peak layer 29: +0.0276)\n"}
+,{"stream_name":"stdout","time":17084.393112722,"data":"  [question_to_last] 17/50 id=vqarad_test_0016 tokens=10 IF=+0.0179 (peak layer 27: +0.0504)\n"}
+,{"stream_name":"stdout","time":17084.393118619,"data":"  [question_to_last] 18/50 id=vqarad_test_0017 tokens=64 IF=+0.0039 (peak layer 33: +0.0196)\n"}
+,{"stream_name":"stdout","time":17084.393122283,"data":"  [question_to_last] 19/50 id=vqarad_test_0018 tokens=64 IF=+0.0041 (peak layer 17: +0.0186)\n"}
+,{"stream_name":"stdout","time":17084.393125889,"data":"  [question_to_last] 20/50 id=vqarad_test_0019 tokens=61 IF=-0.0034 (peak layer 23: +0.0387)\n"}
+,{"stream_name":"stdout","time":17084.393132504,"data":"  [question_to_last] 21/50 id=vqarad_test_0020 tokens=64 IF=+0.0067 (peak layer 17: +0.0365)\n"}
+,{"stream_name":"stdout","time":17084.393136257,"data":"  [question_to_last] 22/50 id=vqarad_test_0021 tokens=64 IF=+0.0002 (peak layer 17: +0.0141)\n"}
+,{"stream_name":"stdout","time":17084.393139901,"data":"  [question_to_last] 23/50 id=vqarad_test_0022 tokens=37 IF=+0.0157 (peak layer 20: +0.0328)\n"}
+,{"stream_name":"stdout","time":17084.393143474,"data":"  [question_to_last] 24/50 id=vqarad_test_0023 tokens=64 IF=+0.0002 (peak layer 27: +0.0341)\n"}
+,{"stream_name":"stdout","time":17084.393147122,"data":"  [question_to_last] 25/50 id=vqarad_test_0024 tokens=64 IF=+0.0024 (peak layer 29: +0.0323)\n"}
+,{"stream_name":"stdout","time":17084.393150731,"data":"  [question_to_last] 26/50 id=vqarad_test_0025 tokens=64 IF=+0.0020 (peak layer 27: +0.0252)\n"}
+,{"stream_name":"stdout","time":17084.39315433,"data":"  [question_to_last] 27/50 id=vqarad_test_0026 tokens=64 IF=+0.0030 (peak layer 29: +0.0312)\n"}
+,{"stream_name":"stdout","time":17084.393171563,"data":"  [question_to_last] 28/50 id=vqarad_test_0027 tokens=64 IF=-0.0011 (peak layer 29: +0.0290)\n"}
+,{"stream_name":"stdout","time":17084.393178016,"data":"  [question_to_last] 29/50 id=vqarad_test_0028 tokens=64 IF=+0.0096 (peak layer 31: +0.0164)\n"}
+,{"stream_name":"stdout","time":17084.393181715,"data":"  [question_to_last] 30/50 id=vqarad_test_0029 tokens=64 IF=+0.0045 (peak layer 19: +0.0255)\n"}
+,{"stream_name":"stdout","time":17084.393185372,"data":"  [question_to_last] 31/50 id=vqarad_test_0030 tokens=58 IF=-0.0040 (peak layer 13: +0.0201)\n"}
+,{"stream_name":"stdout","time":17084.39318895,"data":"  [question_to_last] 32/50 id=vqarad_test_0031 tokens=57 IF=+0.0001 (peak layer 22: +0.0236)\n"}
+,{"stream_name":"stdout","time":17084.393192535,"data":"  [question_to_last] 33/50 id=vqarad_test_0032 tokens=64 IF=+0.0052 (peak layer 17: +0.0282)\n"}
+,{"stream_name":"stdout","time":17084.393196145,"data":"  [question_to_last] 34/50 id=vqarad_test_0033 tokens=64 IF=+0.0028 (peak layer 29: +0.0508)\n"}
+,{"stream_name":"stdout","time":18968.795774747,"data":"  [question_to_last] 35/50 id=vqarad_test_0034 tokens=64 IF=+0.0016 (peak layer 23: +0.0225)\n"}
+,{"stream_name":"stdout","time":18968.795820628,"data":"  [question_to_last] 36/50 id=vqarad_test_0085 tokens=64 IF=+0.0081 (peak layer 17: +0.0470)\n"}
+,{"stream_name":"stdout","time":18968.795825748,"data":"  [question_to_last] 37/50 id=vqarad_test_0086 tokens=64 IF=+0.0014 (peak layer 27: +0.0352)\n"}
+,{"stream_name":"stdout","time":18968.795830175,"data":"  [question_to_last] 38/50 id=vqarad_test_0087 tokens=64 IF=-0.0015 (peak layer 30: +0.0199)\n"}
+,{"stream_name":"stdout","time":18968.79583472,"data":"  [question_to_last] 39/50 id=vqarad_test_0088 tokens=21 IF=-0.0005 (peak layer 29: +0.0614)\n"}
+,{"stream_name":"stdout","time":18968.79583906,"data":"  [question_to_last] 40/50 id=vqarad_test_0089 tokens=37 IF=-0.0003 (peak layer 17: +0.0656)\n"}
+,{"stream_name":"stdout","time":18968.795843295,"data":"  [question_to_last] 41/50 id=vqarad_test_0090 tokens=33 IF=+0.0148 (peak layer 12: +0.0413)\n"}
+,{"stream_name":"stdout","time":18968.79584751,"data":"  [question_to_last] 42/50 id=vqarad_test_0091 tokens=64 IF=-0.0065 (peak layer 11: +0.0182)\n"}
+,{"stream_name":"stdout","time":18968.795851852,"data":"  [question_to_last] 43/50 id=vqarad_test_0092 tokens=64 IF=+0.0038 (peak layer 29: +0.0360)\n"}
+,{"stream_name":"stdout","time":18968.795856022,"data":"  [question_to_last] 44/50 id=vqarad_test_0093 tokens=64 IF=+0.0097 (peak layer 23: +0.0290)\n"}
+,{"stream_name":"stdout","time":18968.795860185,"data":"  [question_to_last] 45/50 id=vqarad_test_0094 tokens=64 IF=+0.0059 (peak layer 29: +0.0163)\n"}
+,{"stream_name":"stdout","time":18968.796249198,"data":"  [question_to_last] 46/50 id=vqarad_test_0095 tokens=64 IF=+0.0029 (peak layer 11: +0.0187)\n"}
+,{"stream_name":"stdout","time":18968.796264328,"data":"  [question_to_last] 47/50 id=vqarad_test_0096 tokens=39 IF=-0.0067 (peak layer 21: +0.0289)\n"}
+,{"stream_name":"stdout","time":18968.796268149,"data":"  [question_to_last] 48/50 id=vqarad_test_0097 tokens=32 IF=-0.0072 (peak layer 29: +0.0314)\n"}
+,{"stream_name":"stdout","time":18968.796271873,"data":"  [question_to_last] 49/50 id=vqarad_test_0098 tokens=24 IF=-0.0086 (peak layer 29: +0.0461)\n"}
+,{"stream_name":"stdout","time":18968.796275425,"data":"  [question_to_last] 50/50 id=vqarad_test_0099 tokens=64 IF=-0.0030 (peak layer 29: +0.0151)\n"}
+,{"stream_name":"stdout","time":18968.796278808,"data":"[FG-TRACER] question_to_last summary:\n"}
+,{"stream_name":"stdout","time":18968.796282159,"data":"  accuracy (loose)  : 0.580  (29/50)\n"}
+,{"stream_name":"stdout","time":18968.796285493,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":18968.796305218,"data":"  closed (yes/no)   : 0.778  (n=27)\n"}
+,{"stream_name":"stdout","time":18968.796308626,"data":"  open-ended        : 0.348  (n=23)\n"}
+,{"stream_name":"stdout","time":18968.796312294,"data":"  mean log-prob     : -0.251\n"}
+,{"stream_name":"stdout","time":18968.796315722,"data":"  log-prob correct  : -0.260   incorrect: -0.238  (Δ=-0.021)\n"}
+,{"stream_name":"stdout","time":18968.796320121,"data":"[FG-TRACER] wrote outputs_medgemma_g1/results_vqa_rad_question_to_last_k1.json  (9429.9s)\n"}
+,{"stream_name":"stdout","time":18968.796323838,"data":"[FG-TRACER] image_entry_layer (\u003e=50% of peak) = 17 / 34\n"}
+,{"stream_name":"stdout","time":18968.796328016,"data":"[FG-TRACER] question_dominance_ratio = 6.99\n"}
+,{"stream_name":"stdout","time":18969.001899803,"data":"\n"}
+,{"stream_name":"stdout","time":18969.001924697,"data":"  [question_to_last] 36/50 id=vqarad_test_0085 tokens=64 IF=+0.0081 (peak layer 17: +0.0470)\n"}
+,{"stream_name":"stdout","time":18969.00192887,"data":"  [question_to_last] 37/50 id=vqarad_test_0086 tokens=64 IF=+0.0014 (peak layer 27: +0.0352)\n"}
+,{"stream_name":"stdout","time":18969.001932419,"data":"  [question_to_last] 38/50 id=vqarad_test_0087 tokens=64 IF=-0.0015 (peak layer 30: +0.0199)\n"}
+,{"stream_name":"stdout","time":18969.001935857,"data":"  [question_to_last] 39/50 id=vqarad_test_0088 tokens=21 IF=-0.0005 (peak layer 29: +0.0614)\n"}
+,{"stream_name":"stdout","time":18969.001939306,"data":"  [question_to_last] 40/50 id=vqarad_test_0089 tokens=37 IF=-0.0003 (peak layer 17: +0.0656)\n"}
+,{"stream_name":"stdout","time":18969.001942624,"data":"  [question_to_last] 41/50 id=vqarad_test_0090 tokens=33 IF=+0.0148 (peak layer 12: +0.0413)\n"}
+,{"stream_name":"stdout","time":18969.001945959,"data":"  [question_to_last] 42/50 id=vqarad_test_0091 tokens=64 IF=-0.0065 (peak layer 11: +0.0182)\n"}
+,{"stream_name":"stdout","time":18969.001949314,"data":"  [question_to_last] 43/50 id=vqarad_test_0092 tokens=64 IF=+0.0038 (peak layer 29: +0.0360)\n"}
+,{"stream_name":"stdout","time":18969.001952721,"data":"  [question_to_last] 44/50 id=vqarad_test_0093 tokens=64 IF=+0.0097 (peak layer 23: +0.0290)\n"}
+,{"stream_name":"stdout","time":18969.001956086,"data":"  [question_to_last] 45/50 id=vqarad_test_0094 tokens=64 IF=+0.0059 (peak layer 29: +0.0163)\n"}
+,{"stream_name":"stdout","time":18969.001959467,"data":"  [question_to_last] 46/50 id=vqarad_test_0095 tokens=64 IF=+0.0029 (peak layer 11: +0.0187)\n"}
+,{"stream_name":"stdout","time":18969.001962817,"data":"  [question_to_last] 47/50 id=vqarad_test_0096 tokens=39 IF=-0.0067 (peak layer 21: +0.0289)\n"}
+,{"stream_name":"stdout","time":18969.001966201,"data":"  [question_to_last] 48/50 id=vqarad_test_0097 tokens=32 IF=-0.0072 (peak layer 29: +0.0314)\n"}
+,{"stream_name":"stdout","time":18969.001977538,"data":"  [question_to_last] 49/50 id=vqarad_test_0098 tokens=24 IF=-0.0086 (peak layer 29: +0.0461)\n"}
+,{"stream_name":"stdout","time":18969.001981502,"data":"  [question_to_last] 50/50 id=vqarad_test_0099 tokens=64 IF=-0.0030 (peak layer 29: +0.0151)\n"}
+,{"stream_name":"stdout","time":18969.001984912,"data":"[FG-TRACER] question_to_last summary:\n"}
+,{"stream_name":"stdout","time":18969.001988137,"data":"  accuracy (loose)  : 0.580  (29/50)\n"}
+,{"stream_name":"stdout","time":18969.001991424,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":18969.001994628,"data":"  closed (yes/no)   : 0.778  (n=27)\n"}
+,{"stream_name":"stdout","time":18969.00199783,"data":"  open-ended        : 0.348  (n=23)\n"}
+,{"stream_name":"stdout","time":18969.002000988,"data":"  mean log-prob     : -0.251\n"}
+,{"stream_name":"stdout","time":18969.002004549,"data":"  log-prob correct  : -0.260   incorrect: -0.238  (Δ=-0.021)\n"}
+,{"stream_name":"stdout","time":18969.002008826,"data":"[FG-TRACER] wrote outputs_medgemma_g1/results_vqa_rad_question_to_last_k1.json  (9429.9s)\n"}
+,{"stream_name":"stdout","time":18969.002012195,"data":"[FG-TRACER] image_entry_layer (\u003e=50% of peak) = 17 / 34\n"}
+,{"stream_name":"stdout","time":18969.002015816,"data":"[FG-TRACER] question_dominance_ratio = 6.99\n"}
+,{"stream_name":"stdout","time":20093.299919952,"data":"\n"}
+,{"stream_name":"stdout","time":20093.299968824,"data":"  [question_to_last] 36/50 id=vqarad_test_0035 tokens=64 IF=+0.0023 (peak layer 27: +0.0182)\n"}
+,{"stream_name":"stdout","time":20093.299972946,"data":"  [question_to_last] 37/50 id=vqarad_test_0036 tokens=64 IF=+0.0045 (peak layer 29: +0.0243)\n"}
+,{"stream_name":"stdout","time":20093.299976755,"data":"  [question_to_last] 38/50 id=vqarad_test_0037 tokens=64 IF=-0.0014 (peak layer 29: +0.0347)\n"}
+,{"stream_name":"stdout","time":20093.299995769,"data":"  [question_to_last] 39/50 id=vqarad_test_0038 tokens=32 IF=-0.0084 (peak layer 11: +0.0210)\n"}
+,{"stream_name":"stdout","time":20093.300001606,"data":"  [question_to_last] 40/50 id=vqarad_test_0039 tokens=51 IF=+0.0037 (peak layer 21: +0.0267)\n"}
+,{"stream_name":"stdout","time":20093.300006639,"data":"  [question_to_last] 41/50 id=vqarad_test_0040 tokens=64 IF=+0.0052 (peak layer 17: +0.0319)\n"}
+,{"stream_name":"stdout","time":20093.300011559,"data":"  [question_to_last] 42/50 id=vqarad_test_0041 tokens=64 IF=+0.0041 (peak layer 16: +0.0187)\n"}
+,{"stream_name":"stdout","time":20093.300016512,"data":"  [question_to_last] 43/50 id=vqarad_test_0042 tokens=64 IF=-0.0004 (peak layer 29: +0.0416)\n"}
+,{"stream_name":"stdout","time":20093.300020941,"data":"  [question_to_last] 44/50 id=vqarad_test_0043 tokens=64 IF=+0.0051 (peak layer 13: +0.0209)\n"}
+,{"stream_name":"stdout","time":20093.300025231,"data":"  [question_to_last] 45/50 id=vqarad_test_0044 tokens=64 IF=+0.0089 (peak layer 29: +0.0247)\n"}
+,{"stream_name":"stdout","time":20093.300594162,"data":"  [question_to_last] 46/50 id=vqarad_test_0045 tokens=29 IF=-0.0008 (peak layer 29: +0.0544)\n"}
+,{"stream_name":"stdout","time":20093.300620022,"data":"  [question_to_last] 47/50 id=vqarad_test_0046 tokens=64 IF=-0.0026 (peak layer 29: +0.0429)\n"}
+,{"stream_name":"stdout","time":20093.300624932,"data":"  [question_to_last] 48/50 id=vqarad_test_0047 tokens=64 IF=-0.0059 (peak layer 18: +0.0184)\n"}
+,{"stream_name":"stdout","time":20093.300629058,"data":"  [question_to_last] 49/50 id=vqarad_test_0048 tokens=64 IF=+0.0081 (peak layer 21: +0.0257)\n"}
+,{"stream_name":"stdout","time":20093.300633968,"data":"  [question_to_last] 50/50 id=vqarad_test_0049 tokens=64 IF=+0.0035 (peak layer 17: +0.0163)\n"}
+,{"stream_name":"stdout","time":20093.300676348,"data":"[FG-TRACER] question_to_last summary:\n"}
+,{"stream_name":"stdout","time":20093.300680015,"data":"  accuracy (loose)  : 0.660  (33/50)\n"}
+,{"stream_name":"stdout","time":20093.300683113,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":20093.300686032,"data":"  closed (yes/no)   : 0.750  (n=32)\n"}
+,{"stream_name":"stdout","time":20093.300688986,"data":"  open-ended        : 0.500  (n=18)\n"}
+,{"stream_name":"stdout","time":20093.30069427,"data":"  mean log-prob     : -0.247\n"}
+,{"stream_name":"stdout","time":20093.300697565,"data":"  log-prob correct  : -0.257   incorrect: -0.226  (Δ=-0.031)\n"}
+,{"stream_name":"stdout","time":20093.300701561,"data":"[FG-TRACER] wrote outputs_medgemma_g0/results_vqa_rad_question_to_last_k1.json  (9984.8s)\n"}
+,{"stream_name":"stdout","time":20093.300705368,"data":"[FG-TRACER] image_entry_layer (\u003e=50% of peak) = 17 / 34\n"}
+,{"stream_name":"stdout","time":20093.300709213,"data":"[FG-TRACER] question_dominance_ratio = 6.59\n"}
+,{"stream_name":"stdout","time":20093.505711056,"data":"\n"}
+,{"stream_name":"stdout","time":20093.50574896,"data":"  [question_to_last] 36/50 id=vqarad_test_0035 tokens=64 IF=+0.0023 (peak layer 27: +0.0182)\n"}
+,{"stream_name":"stdout","time":20093.505753694,"data":"  [question_to_last] 37/50 id=vqarad_test_0036 tokens=64 IF=+0.0045 (peak layer 29: +0.0243)\n"}
+,{"stream_name":"stdout","time":20093.505757021,"data":"  [question_to_last] 38/50 id=vqarad_test_0037 tokens=64 IF=-0.0014 (peak layer 29: +0.0347)\n"}
+,{"stream_name":"stdout","time":20093.505760338,"data":"  [question_to_last] 39/50 id=vqarad_test_0038 tokens=32 IF=-0.0084 (peak layer 11: +0.0210)\n"}
+,{"stream_name":"stdout","time":20093.505763583,"data":"  [question_to_last] 40/50 id=vqarad_test_0039 tokens=51 IF=+0.0037 (peak layer 21: +0.0267)\n"}
+,{"stream_name":"stdout","time":20093.50576697,"data":"  [question_to_last] 41/50 id=vqarad_test_0040 tokens=64 IF=+0.0052 (peak layer 17: +0.0319)\n"}
+,{"stream_name":"stdout","time":20093.505770122,"data":"  [question_to_last] 42/50 id=vqarad_test_0041 tokens=64 IF=+0.0041 (peak layer 16: +0.0187)\n"}
+,{"stream_name":"stdout","time":20093.505773394,"data":"  [question_to_last] 43/50 id=vqarad_test_0042 tokens=64 IF=-0.0004 (peak layer 29: +0.0416)\n"}
+,{"stream_name":"stdout","time":20093.505776515,"data":"  [question_to_last] 44/50 id=vqarad_test_0043 tokens=64 IF=+0.0051 (peak layer 13: +0.0209)\n"}
+,{"stream_name":"stdout","time":20093.505779658,"data":"  [question_to_last] 45/50 id=vqarad_test_0044 tokens=64 IF=+0.0089 (peak layer 29: +0.0247)\n"}
+,{"stream_name":"stdout","time":20093.505782841,"data":"  [question_to_last] 46/50 id=vqarad_test_0045 tokens=29 IF=-0.0008 (peak layer 29: +0.0544)\n"}
+,{"stream_name":"stdout","time":20093.505786077,"data":"  [question_to_last] 47/50 id=vqarad_test_0046 tokens=64 IF=-0.0026 (peak layer 29: +0.0429)\n"}
+,{"stream_name":"stdout","time":20093.505789342,"data":"  [question_to_last] 48/50 id=vqarad_test_0047 tokens=64 IF=-0.0059 (peak layer 18: +0.0184)\n"}
+,{"stream_name":"stdout","time":20093.505792664,"data":"  [question_to_last] 49/50 id=vqarad_test_0048 tokens=64 IF=+0.0081 (peak layer 21: +0.0257)\n"}
+,{"stream_name":"stdout","time":20093.505795858,"data":"  [question_to_last] 50/50 id=vqarad_test_0049 tokens=64 IF=+0.0035 (peak layer 17: +0.0163)\n"}
+,{"stream_name":"stdout","time":20093.505799053,"data":"[FG-TRACER] question_to_last summary:\n"}
+,{"stream_name":"stdout","time":20093.505802012,"data":"  accuracy (loose)  : 0.660  (33/50)\n"}
+,{"stream_name":"stdout","time":20093.505805041,"data":"  exact match       : 0.000\n"}
+,{"stream_name":"stdout","time":20093.505808423,"data":"  closed (yes/no)   : 0.750  (n=32)\n"}
+,{"stream_name":"stdout","time":20093.505824487,"data":"  open-ended        : 0.500  (n=18)\n"}
+,{"stream_name":"stdout","time":20093.505827992,"data":"  mean log-prob     : -0.247\n"}
+,{"stream_name":"stdout","time":20093.505830909,"data":"  log-prob correct  : -0.257   incorrect: -0.226  (Δ=-0.031)\n"}
+,{"stream_name":"stdout","time":20093.505834853,"data":"[FG-TRACER] wrote outputs_medgemma_g0/results_vqa_rad_question_to_last_k1.json  (9984.8s)\n"}
+,{"stream_name":"stdout","time":20093.505838045,"data":"[FG-TRACER] image_entry_layer (\u003e=50% of peak) = 17 / 34\n"}
+,{"stream_name":"stdout","time":20093.505841466,"data":"[FG-TRACER] question_dominance_ratio = 6.59\n"}
+,{"stream_name":"stdout","time":20096.555443159,"data":"  results_vqa_rad_image_to_last_k1.json: merged 100 samples from 2 dirs -\u003e outputs_medgemma\n"}
+,{"stream_name":"stdout","time":20096.555476148,"data":"  results_vqa_rad_question_to_last_k1.json: merged 100 samples from 2 dirs -\u003e outputs_medgemma\n"}
+,{"stream_name":"stdout","time":20096.572801751,"data":"  results_vqa_rad_image_to_last_k1.json: merged 100 samples from 2 dirs -\u003e outputs_medgemma\n"}
+,{"stream_name":"stdout","time":20096.572831882,"data":"  results_vqa_rad_question_to_last_k1.json: merged 100 samples from 2 dirs -\u003e outputs_medgemma\n"}
+,{"stream_name":"stdout","time":20096.572849147,"data":"merged -\u003e outputs_medgemma ['results_vqa_rad_image_to_last_k1.json', 'results_vqa_rad_question_to_last_k1.json']\n"}
+,{"stream_name":"stdout","time":20096.804084598,"data":"results_vqa_rad_image_to_last_k1.json | n= 100 | mnt= 64 | acc= 0.62\n"}
+,{"stream_name":"stdout","time":20096.804127375,"data":"   gen: 'Based on the chest X-ray provided, there is no clear evidence of an ao'\n"}
+,{"stream_name":"stdout","time":20096.805023564,"data":"results_vqa_rad_question_to_last_k1.json | n= 100 | mnt= 64 | acc= 0.62\n"}
+,{"stream_name":"stdout","time":20096.805043794,"data":"   gen: 'Based on the chest X-ray provided, there is no clear evidence of an ao'\n"}
+,{"stream_name":"stdout","time":20098.654429247,"data":"W\u0026B logging skipped (No API key configured. Use `wandb login` to log in.)\n"}
+,{"stream_name":"stderr","time":20104.117074036,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":20104.117133271,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":20104.279640643,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":20104.279688611,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":20105.064258841,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":20105.14583027,"data":"[NbConvertApp] Writing 37862 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":20107.597990154,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":20108.121330949,"data":"[NbConvertApp] Writing 323514 bytes to __results__.html\n"}
+]

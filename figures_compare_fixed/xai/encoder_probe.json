@@ -1,0 +1,9 @@
+{
+  "n_samples": 100,
+  "n_image_tokens": 256,
+  "hidden_dim": 2560,
+  "cosine_similarity_mean": 0.33353856205940247,
+  "cosine_similarity_median": 0.3266698122024536,
+  "linear_cka": 0.15530678629875183,
+  "interpretation": "cosine/CKA near 1 => encoders produce near-identical decoder-input features, so the vision encoder cannot explain the QDR shift; lower values bound its share."
+}

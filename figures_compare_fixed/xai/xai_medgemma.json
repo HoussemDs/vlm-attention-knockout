@@ -1,0 +1,958 @@
+{
+  "label": "medgemma",
+  "model_dir": "google/medgemma-4b-it",
+  "n_samples": 100,
+  "n_ok": 100,
+  "lens_applied_final_norm": true,
+  "attention_available": true,
+  "curve_lens_answer_logprob": [
+    -561.005625,
+    -35.30167289733887,
+    -38.982414169311525,
+    -34.08967998504639,
+    -31.78797424316406,
+    -18.898594913482665,
+    -17.544404182434082,
+    -14.678986196517945,
+    -11.861666860580444,
+    -11.547681350708007,
+    -11.23539053916931,
+    -11.26445215702057,
+    -11.366672534942627,
+    -11.077357330322265,
+    -10.761293392181397,
+    -10.472517671585083,
+    -10.092195949554444,
+    -8.98737606048584,
+    -9.0827672290802,
+    -8.521354684829712,
+    -7.02426707983017,
+    -5.51997474193573,
+    -4.295342997312546,
+    -4.709117819517851,
+    -3.653899298608303,
+    -4.182905435562134,
+    -0.6303808658570051,
+    -0.6996639492362737,
+    -0.5978927380405367,
+    -0.5360204309225083,
+    -0.4338165970519185,
+    -0.5195134140737355,
+    -0.21065823153592647,
+    -0.26093207965954207,
+    -28.862795499802743
+  ],
+  "curve_lens_entropy": [
+    0.0,
+    1.112373668551445,
+    1.1922869437932968,
+    0.754751841723919,
+    0.9005758938193321,
+    3.0391776323318482,
+    2.345489913225174,
+    3.491454553604126,
+    7.6392371940612795,
+    10.590725698471068,
+    11.457280349731445,
+    11.949390258789062,
+    12.122983865737915,
+    12.153451385498046,
+    12.212204856872559,
+    12.213870916366577,
+    12.193792095184326,
+    12.035020360946655,
+    11.83845669746399,
+    11.508406047821046,
+    10.515740442276002,
+    7.9236570167541505,
+    4.252316321134567,
+    1.8802426612377168,
+    1.535797877907753,
+    1.5434239926934241,
+    0.9703889057040215,
+    0.8968688189983368,
+    0.548863889425993,
+    0.4724210558086634,
+    0.49199525952339174,
+    0.5079340671747923,
+    0.29511621691286566,
+    0.3809035751409829,
+    0.23566344317867224
+  ],
+  "curve_lens_dla": [
+    0.0,
+    525.7039521026611,
+    -3.680741271972656,
+    4.892734184265136,
+    2.301705741882324,
+    12.889379329681397,
+    1.354190731048584,
+    2.8654179859161375,
+    2.8173193359375,
+    0.3139855098724365,
+    0.3122908115386963,
+    -0.029061617851257323,
+    -0.10222037792205811,
+    0.2893152046203613,
+    0.31606393814086914,
+    0.28877572059631346,
+    0.38032172203063963,
+    1.1048198890686036,
+    -0.09539116859436035,
+    0.5614125442504883,
+    1.4970876049995423,
+    1.5042923378944397,
+    1.2246317446231842,
+    -0.4137748222053051,
+    1.0552185209095477,
+    -0.5290061369538307,
+    3.552524569705129,
+    -0.06928308337926864,
+    0.10177121119573712,
+    0.0618723071180284,
+    0.10220383387058973,
+    -0.08569681702181697,
+    0.308855182537809,
+    -0.05027384812361561,
+    -28.6018634201432
+  ],
+  "curve_attn_to_image": [
+    0.1002783203125,
+    0.030733642578125,
+    0.017552490234375,
+    0.00729461669921875,
+    0.03637451171875,
+    0.07591064453125,
+    0.10548828125,
+    0.030709228515625,
+    0.041724853515625,
+    0.1103125,
+    0.1126416015625,
+    0.119150390625,
+    0.185830078125,
+    0.0818798828125,
+    0.14080078125,
+    0.21111328125,
+    0.1171484375,
+    0.179501953125,
+    0.06031494140625,
+    0.11760986328125,
+    0.1450390625,
+    0.0926806640625,
+    0.18439453125,
+    0.135693359375,
+    0.079345703125,
+    0.0385888671875,
+    0.07822998046875,
+    0.0573486328125,
+    0.042681884765625,
+    0.039921875,
+    0.146884765625,
+    0.0881591796875,
+    0.051331787109375,
+    0.040960693359375
+  ],
+  "mean_answer_formation_frac": 0.7420588235294119,
+  "per_sample": [
+    {
+      "id": "vqarad_test_0000",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -32.000675201416016,
+      "final_entropy": 0.006114627234637737
+    },
+    {
+      "id": "vqarad_test_0001",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.099437713623047,
+      "final_entropy": 1.104393482208252
+    },
+    {
+      "id": "vqarad_test_0002",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -24.326587677001953,
+      "final_entropy": 0.6450842022895813
+    },
+    {
+      "id": "vqarad_test_0003",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -33.00004577636719,
+      "final_entropy": 0.0004993991460651159
+    },
+    {
+      "id": "vqarad_test_0004",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -42.69331359863281,
+      "final_entropy": 0.6946575045585632
+    },
+    {
+      "id": "vqarad_test_0005",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -24.02071762084961,
+      "final_entropy": 0.10831408202648163
+    },
+    {
+      "id": "vqarad_test_0006",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -32.000335693359375,
+      "final_entropy": 0.0030183119233697653
+    },
+    {
+      "id": "vqarad_test_0007",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -30.00247573852539,
+      "final_entropy": 0.01731170527637005
+    },
+    {
+      "id": "vqarad_test_0008",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.313262939453125,
+      "final_entropy": 0.5822126269340515
+    },
+    {
+      "id": "vqarad_test_0009",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -31.169849395751953,
+      "final_entropy": 0.5243029594421387
+    },
+    {
+      "id": "vqarad_test_0010",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -26.00098991394043,
+      "final_entropy": 0.008187911473214626
+    },
+    {
+      "id": "vqarad_test_0011",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -30.12773323059082,
+      "final_entropy": 0.37160128355026245
+    },
+    {
+      "id": "vqarad_test_0012",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -36.00035095214844,
+      "final_entropy": 0.003218534402549267
+    },
+    {
+      "id": "vqarad_test_0013",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -26.009191513061523,
+      "final_entropy": 0.05750330910086632
+    },
+    {
+      "id": "vqarad_test_0014",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.01909637451172,
+      "final_entropy": 0.09775271266698837
+    },
+    {
+      "id": "vqarad_test_0015",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -25.175519943237305,
+      "final_entropy": 0.5562638640403748
+    },
+    {
+      "id": "vqarad_test_0016",
+      "answer_token": 2094,
+      "answer_formation_layer": 18,
+      "answer_formation_frac": 0.5294117647058824,
+      "final_answer_logprob": -3.048593282699585,
+      "final_entropy": 0.19094106554985046
+    },
+    {
+      "id": "vqarad_test_0017",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -31.050945281982422,
+      "final_entropy": 0.2070266753435135
+    },
+    {
+      "id": "vqarad_test_0018",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.169864654541016,
+      "final_entropy": 0.5244970321655273
+    },
+    {
+      "id": "vqarad_test_0019",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -30.694393157958984,
+      "final_entropy": 0.7019128799438477
+    },
+    {
+      "id": "vqarad_test_0020",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.000335693359375,
+      "final_entropy": 0.0030183468479663134
+    },
+    {
+      "id": "vqarad_test_0021",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -36.04860305786133,
+      "final_entropy": 0.19105826318264008
+    },
+    {
+      "id": "vqarad_test_0022",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -35.0,
+      "final_entropy": 2.210901811849908e-06
+    },
+    {
+      "id": "vqarad_test_0023",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -40.313262939453125,
+      "final_entropy": 0.5822033286094666
+    },
+    {
+      "id": "vqarad_test_0024",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -21.412090301513672,
+      "final_entropy": 0.857424259185791
+    },
+    {
+      "id": "vqarad_test_0025",
+      "answer_token": 22515,
+      "answer_formation_layer": 27,
+      "answer_formation_frac": 0.7941176470588235,
+      "final_answer_logprob": -31.048587799072266,
+      "final_entropy": 0.19086706638336182
+    },
+    {
+      "id": "vqarad_test_0026",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.048908233642578,
+      "final_entropy": 0.1937248408794403
+    },
+    {
+      "id": "vqarad_test_0027",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.049461364746094,
+      "final_entropy": 0.19776077568531036
+    },
+    {
+      "id": "vqarad_test_0028",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -35.048587799072266,
+      "final_entropy": 0.19086679816246033
+    },
+    {
+      "id": "vqarad_test_0029",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -38.0067138671875,
+      "final_entropy": 0.04017971083521843
+    },
+    {
+      "id": "vqarad_test_0030",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -43.00093460083008,
+      "final_entropy": 0.00756881246343255
+    },
+    {
+      "id": "vqarad_test_0031",
+      "answer_token": 22515,
+      "answer_formation_layer": 27,
+      "answer_formation_frac": 0.7941176470588235,
+      "final_answer_logprob": -39.06588363647461,
+      "final_entropy": 0.27432528138160706
+    },
+    {
+      "id": "vqarad_test_0032",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -33.0,
+      "final_entropy": 1.934841384354513e-05
+    },
+    {
+      "id": "vqarad_test_0033",
+      "answer_token": 818,
+      "answer_formation_layer": 14,
+      "answer_formation_frac": 0.4117647058823529,
+      "final_answer_logprob": -4.019098281860352,
+      "final_entropy": 0.09779023379087448
+    },
+    {
+      "id": "vqarad_test_0034",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -17.129234313964844,
+      "final_entropy": 0.3813255727291107
+    },
+    {
+      "id": "vqarad_test_0035",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -23.761775970458984,
+      "final_entropy": 0.9038771390914917
+    },
+    {
+      "id": "vqarad_test_0036",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -29.00247573852539,
+      "final_entropy": 0.017323827371001244
+    },
+    {
+      "id": "vqarad_test_0037",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -30.006715774536133,
+      "final_entropy": 0.04018031433224678
+    },
+    {
+      "id": "vqarad_test_0038",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -18.127269744873047,
+      "final_entropy": 0.3684215545654297
+    },
+    {
+      "id": "vqarad_test_0039",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -14.31525993347168,
+      "final_entropy": 0.5976465344429016
+    },
+    {
+      "id": "vqarad_test_0040",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -37.000911712646484,
+      "final_entropy": 0.007288810797035694
+    },
+    {
+      "id": "vqarad_test_0041",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -35.000911712646484,
+      "final_entropy": 0.007288823835551739
+    },
+    {
+      "id": "vqarad_test_0042",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -25.000110626220703,
+      "final_entropy": 0.0012308157747611403
+    },
+    {
+      "id": "vqarad_test_0043",
+      "answer_token": 22515,
+      "answer_formation_layer": 23,
+      "answer_formation_frac": 0.6764705882352942,
+      "final_answer_logprob": -25.002540588378906,
+      "final_entropy": 0.018040116876363754
+    },
+    {
+      "id": "vqarad_test_0044",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -29.03130340576172,
+      "final_entropy": 0.16768194735050201
+    },
+    {
+      "id": "vqarad_test_0045",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -37.000022888183594,
+      "final_entropy": 0.00029351082048378885
+    },
+    {
+      "id": "vqarad_test_0046",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.0,
+      "final_entropy": 2.067608193101478e-06
+    },
+    {
+      "id": "vqarad_test_0047",
+      "answer_token": 818,
+      "answer_formation_layer": 14,
+      "answer_formation_frac": 0.4117647058823529,
+      "final_answer_logprob": -1.3132617473602295,
+      "final_entropy": 0.582203209400177
+    },
+    {
+      "id": "vqarad_test_0048",
+      "answer_token": 3771,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -4.541770613286644e-05,
+      "final_entropy": 0.0004996721399948001
+    },
+    {
+      "id": "vqarad_test_0049",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -34.12773132324219,
+      "final_entropy": 0.37156492471694946
+    },
+    {
+      "id": "vqarad_test_0050",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -33.0000114440918,
+      "final_entropy": 0.0001604502904228866
+    },
+    {
+      "id": "vqarad_test_0051",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -42.0,
+      "final_entropy": 1.4993395780038554e-05
+    },
+    {
+      "id": "vqarad_test_0052",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -43.00004577636719,
+      "final_entropy": 0.0005066029843874276
+    },
+    {
+      "id": "vqarad_test_0053",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.31688117980957,
+      "final_entropy": 0.6065390706062317
+    },
+    {
+      "id": "vqarad_test_0054",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -30.002605438232422,
+      "final_entropy": 0.01862017624080181
+    },
+    {
+      "id": "vqarad_test_0055",
+      "answer_token": 10784,
+      "answer_formation_layer": 20,
+      "answer_formation_frac": 0.5882352941176471,
+      "final_answer_logprob": -22.000913619995117,
+      "final_entropy": 0.007333023473620415
+    },
+    {
+      "id": "vqarad_test_0056",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -17.00273323059082,
+      "final_entropy": 0.021844355389475822
+    },
+    {
+      "id": "vqarad_test_0057",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -26.12722396850586,
+      "final_entropy": 0.3679371774196625
+    },
+    {
+      "id": "vqarad_test_0058",
+      "answer_token": 10784,
+      "answer_formation_layer": 23,
+      "answer_formation_frac": 0.6764705882352942,
+      "final_answer_logprob": -20.41971778869629,
+      "final_entropy": 0.8875541090965271
+    },
+    {
+      "id": "vqarad_test_0059",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -28.04949951171875,
+      "final_entropy": 0.19815877079963684
+    },
+    {
+      "id": "vqarad_test_0060",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -25.69774627685547,
+      "final_entropy": 0.7219321131706238
+    },
+    {
+      "id": "vqarad_test_0061",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.14297103881836,
+      "final_entropy": 0.44148313999176025
+    },
+    {
+      "id": "vqarad_test_0062",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.0,
+      "final_entropy": 1.7423095414415002e-05
+    },
+    {
+      "id": "vqarad_test_0063",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -26.05181121826172,
+      "final_entropy": 0.2138146609067917
+    },
+    {
+      "id": "vqarad_test_0064",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -24.440189361572266,
+      "final_entropy": 0.9475386142730713
+    },
+    {
+      "id": "vqarad_test_0065",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -36.0,
+      "final_entropy": 2.8982140065636486e-06
+    },
+    {
+      "id": "vqarad_test_0066",
+      "answer_token": 22515,
+      "answer_formation_layer": 23,
+      "answer_formation_frac": 0.6764705882352942,
+      "final_answer_logprob": -32.0,
+      "final_entropy": 6.892929832247319e-06
+    },
+    {
+      "id": "vqarad_test_0067",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -41.0,
+      "final_entropy": 7.20463219749945e-07
+    },
+    {
+      "id": "vqarad_test_0068",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -28.065900802612305,
+      "final_entropy": 0.2745087742805481
+    },
+    {
+      "id": "vqarad_test_0069",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.6977481842041,
+      "final_entropy": 0.7219558954238892
+    },
+    {
+      "id": "vqarad_test_0070",
+      "answer_token": 22515,
+      "answer_formation_layer": 27,
+      "answer_formation_frac": 0.7941176470588235,
+      "final_answer_logprob": -29.007055282592773,
+      "final_entropy": 0.04324594885110855
+    },
+    {
+      "id": "vqarad_test_0071",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -29.00130844116211,
+      "final_entropy": 0.011000502854585648
+    },
+    {
+      "id": "vqarad_test_0072",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -28.005897521972656,
+      "final_entropy": 0.042264536023139954
+    },
+    {
+      "id": "vqarad_test_0073",
+      "answer_token": 10784,
+      "answer_formation_layer": 21,
+      "answer_formation_frac": 0.6176470588235294,
+      "final_answer_logprob": -23.241493225097656,
+      "final_entropy": 0.6783788800239563
+    },
+    {
+      "id": "vqarad_test_0074",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -31.31351089477539,
+      "final_entropy": 0.5844045877456665
+    },
+    {
+      "id": "vqarad_test_0075",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -37.0,
+      "final_entropy": 1.2755649549944792e-05
+    },
+    {
+      "id": "vqarad_test_0076",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -28.007049560546875,
+      "final_entropy": 0.04316837340593338
+    },
+    {
+      "id": "vqarad_test_0077",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -27.0487060546875,
+      "final_entropy": 0.19203542172908783
+    },
+    {
+      "id": "vqarad_test_0078",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -27.142946243286133,
+      "final_entropy": 0.4412271976470947
+    },
+    {
+      "id": "vqarad_test_0079",
+      "answer_token": 22515,
+      "answer_formation_layer": 32,
+      "answer_formation_frac": 0.9411764705882353,
+      "final_answer_logprob": -28.17193603515625,
+      "final_entropy": 0.538140058517456
+    },
+    {
+      "id": "vqarad_test_0080",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -36.0,
+      "final_entropy": 5.103177969090211e-08
+    },
+    {
+      "id": "vqarad_test_0081",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -31.000017166137695,
+      "final_entropy": 0.0002004620764637366
+    },
+    {
+      "id": "vqarad_test_0082",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -31.0,
+      "final_entropy": 5.924211109231692e-06
+    },
+    {
+      "id": "vqarad_test_0083",
+      "answer_token": 3771,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -0.0024756519123911858,
+      "final_entropy": 0.01731139048933983
+    },
+    {
+      "id": "vqarad_test_0084",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.00017166137695,
+      "final_entropy": 0.001777326688170433
+    },
+    {
+      "id": "vqarad_test_0085",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -36.00000762939453,
+      "final_entropy": 9.393256186740473e-05
+    },
+    {
+      "id": "vqarad_test_0086",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -32.0,
+      "final_entropy": 1.4418868886423297e-05
+    },
+    {
+      "id": "vqarad_test_0087",
+      "answer_token": 22515,
+      "answer_formation_layer": 34,
+      "answer_formation_frac": 1.0,
+      "final_answer_logprob": -38.761775970458984,
+      "final_entropy": 0.9038978815078735
+    },
+    {
+      "id": "vqarad_test_0088",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -32.12694549560547,
+      "final_entropy": 0.36554184556007385
+    },
+    {
+      "id": "vqarad_test_0089",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -36.00004577636719,
+      "final_entropy": 0.000509584613610059
+    },
+    {
+      "id": "vqarad_test_0090",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -26.17193603515625,
+      "final_entropy": 0.5381435751914978
+    },
+    {
+      "id": "vqarad_test_0091",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -33.00764465332031,
+      "final_entropy": 0.047698017209768295
+    },
+    {
+      "id": "vqarad_test_0092",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -27.000003814697266,
+      "final_entropy": 4.510304643190466e-05
+    },
+    {
+      "id": "vqarad_test_0093",
+      "answer_token": 3771,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -0.00012337400403339416,
+      "final_entropy": 0.0012339260429143906
+    },
+    {
+      "id": "vqarad_test_0094",
+      "answer_token": 22515,
+      "answer_formation_layer": 24,
+      "answer_formation_frac": 0.7058823529411765,
+      "final_answer_logprob": -38.126930236816406,
+      "final_entropy": 0.3653629422187805
+    },
+    {
+      "id": "vqarad_test_0095",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -37.0,
+      "final_entropy": 2.754633499080228e-07
+    },
+    {
+      "id": "vqarad_test_0096",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -34.000003814697266,
+      "final_entropy": 3.1651125027565286e-05
+    },
+    {
+      "id": "vqarad_test_0097",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -35.006717681884766,
+      "final_entropy": 0.040211088955402374
+    },
+    {
+      "id": "vqarad_test_0098",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -31.313262939453125,
+      "final_entropy": 0.582226037979126
+    },
+    {
+      "id": "vqarad_test_0099",
+      "answer_token": 22515,
+      "answer_formation_layer": 26,
+      "answer_formation_frac": 0.7647058823529411,
+      "final_answer_logprob": -32.00016784667969,
+      "final_entropy": 0.0017384702805429697
+    }
+  ]
+}

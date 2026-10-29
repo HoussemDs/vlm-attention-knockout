@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{natbib}
+
+% In-text citations go to the reference list of this PDF by default. Turn that
+% off so each citation is plain text, and the clickable link is the paper's URL
+% in the reference list instead.
+\makeatletter
+\AtBeginDocument{%
+  \renewcommand{\hyper@natlinkstart}[1]{}%
+  \renewcommand{\hyper@natlinkend}{}%
+}
+\makeatother
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=blue!70!black,
+    urlcolor=blue!70!black,
+    pdftitle={Medical Fine-Tuning Changes Answer Commitment and Information Flow in a Vision-Language Model: A Split-Sample Study on VQA-RAD},
+    pdfauthor={Houssem Eddine},
+}
+
+\title{\textbf{Medical Fine-Tuning Changes Answer Commitment and Information Flow in a Vision-Language Model: A Split-Sample Study on VQA-RAD}}
+
+\author{%
+  Houssem Eddine\\
+  \textit{Independent Research}\\
+  \href{mailto:houssemeddineds@gmail.com}{houssemeddineds@gmail.com}
+}
+
+\date{October 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\section{Introduction}
+\input{sections/intro}
+
+\section{Method}
+\input{sections/method}
+
+\section{Experiments}
+\input{sections/experiments}
+
+\section{Results}
+\input{sections/results}
+
+\section{Discussion}
+\label{sec:discussion}
+\input{sections/discussion}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+\section*{Compute, Funding and Authorship}
+All experiments were run on free Kaggle GPU sessions: two NVIDIA T4 GPUs per kernel
+(one data shard per GPU), with Kaggle's 12-hour session cap. No institutional compute,
+funding or supervision was involved. The study was designed, run and written by a single
+author. The code, notebooks and exported logs are on GitHub. This paper is archived on
+Zenodo at \url{https://doi.org/10.5281/zenodo.23766104}.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

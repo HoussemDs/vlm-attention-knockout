@@ -1,0 +1,24 @@
+We present a causal attention-knockout framework for measuring per-layer
+information flow in Vision-Language Models, and apply it to a controlled before/after
+pair, Gemma-3-4B and its medical fine-tune MedGemma-4B, on VQA-RAD under a
+pre-specified protocol that screens a metric family on a discovery split and re-tests
+each candidate on a held-out confirmation split with identical indices for both models.
+The pre-specified primary test confirms: relative to its language prior, the medical
+model relies less on the question text (question-dominance ratio $5.36 \to 4.15$,
+$p{=}0.006$). Four of five discovery candidates replicate: a markedly more decisive
+first answer token, smaller closed yes/no logit margins, lower-probability answer text,
+and lower image$\to$answer flow in both pathways (the image one at the raw level only). The
+medical model is substantially more accurate on closed questions, though the base
+model's near-baseline score means the raw gap overstates the true margin. A half-layer
+``image enters later'' shift seen
+only on discovery does not replicate, which the pre-specified protocol lets us report plainly as
+a null rather than a finding.
+
+We deliberately stop short of a causal story. The medical vision encoder differs
+sharply from the base (linear CKA 0.155), so the measured decoder routing changes
+cannot be attributed to the encoder or the decoder from correlational traces alone.
+We frame that attribution as the central open problem and pursue it in follow-up work
+via a planned follow-up experiment. The framework is architecture-agnostic and
+requires no retraining. The implementation, the analysis scripts, and the per-layer
+information-flow curves (as numeric exports, without VQA-RAD text) are released at
+\url{https://github.com/HoussemDs/vlm-attention-knockout} to support reproducibility.

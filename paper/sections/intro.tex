@@ -1,0 +1,27 @@
+Vision-Language Models (VLMs) are increasingly applied to medical imaging, with
+specialised fine-tunes such as MedGemma~\citep{medgemma2025} achieving strong
+performance on radiology VQA tasks. Yet the \emph{mechanism} by which fine-tuning
+changes these models remains opaque: does medical adaptation cause the model to
+attend more carefully to the image, to rely more on language priors, or to combine
+the two modalities at different decoder layers?
+
+Many XAI methods for VLMs focus on \emph{spatial} attribution (which pixels or
+image regions influence the prediction \citep{selvaraju2017gradcam,chefer2021transformer}), and do not localise, by transformer depth, where visual information becomes
+causally relevant. Attention knockout answers that question: \citet{geva2023dissecting}
+introduced it for text LLMs, and \citet{zhang2025crossmodal} extended per-layer
+cross-modal information-flow probing to multimodal LLMs. We build directly on that line
+of work and do not claim the probing mechanism as new.
+
+Our contribution is to turn this probing into a \emph{controlled, pre-specified
+before/after measurement instrument} and apply it to a matched base-vs-medical pair
+(Gemma-3-4B vs.\ MedGemma-4B), asking a question prior work does not: what does medical
+fine-tuning change in the image pathway, and can that change be attributed to the
+encoder or the decoder? We implement the probe with lightweight PyTorch hooks.
+
+\paragraph{Contributions.}
+We contribute a pre-specified before/after instrument that applies per-layer
+attention-knockout probing to Gemma-3-4B vs.\ MedGemma-4B on VQA-RAD, with a held-out
+confirmation split. The probing itself follows prior work, and the instrument is
+implemented with PyTorch forward hooks and no architectural changes. The open question
+is whether the change lies in the encoder or the decoder: we document a large encoder
+change, but leave causal attribution to a planned follow-up study.

@@ -1,0 +1,27 @@
+{
+  "split": "discovery",
+  "n_perm": 10000,
+  "seed": 0,
+  "metrics": {
+    "if_auc": {
+      "n": 100,
+      "p_perm": 0.0023997600239976003
+    },
+    "first_token_entropy": {
+      "n": 100,
+      "p_perm": 0.0012998700129987
+    },
+    "answer_confidence": {
+      "n": 100,
+      "p_perm": 9.999000099990002e-05
+    },
+    "if_gini": {
+      "n": 100,
+      "p_perm": 0.12388761123887611
+    },
+    "closed_margin": {
+      "n": 59,
+      "p_perm": 0.012798720127987202
+    }
+  }
+}

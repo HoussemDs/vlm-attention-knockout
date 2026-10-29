@@ -1,0 +1,6 @@
+{
+  "n": 100,
+  "kl_base_to_medical_nats": 2.771365165710449,
+  "jensen_shannon_nats": 0.21208062767982483,
+  "note": "first-answer-token distribution shift from fine-tuning"
+}

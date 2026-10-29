@@ -1,0 +1,18 @@
+{
+  "id": "houssemeddineds/fgtracer-medgemma",
+  "title": "fgtracer-medgemma",
+  "code_file": "fgtracer-medgemma.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "houssemeddineds/fgtracer-code",
+    "houssemeddineds/fgtracer-hf-token"
+  ],
+  "model_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "secret_sources": ["HF_TOKEN", "WANDB_API_KEY"]
+}

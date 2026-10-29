@@ -1,0 +1,11 @@
+# Attention-knockout probe - minimal runtime requirements (CPU friendly)
+torch>=2.2
+transformers>=4.50,<5  # Gemma 3 / MedGemma need >=4.50; HQQ int4 dropped in 5.x
+accelerate>=0.30
+safetensors
+pillow
+numpy
+matplotlib
+datasets  # HF dataset loader (VQA-RAD)
+optimum-quanto  # int8 weight-only quantization on CPU (--quantization int8, preferred)
+hqq  # int4 weight-only quantization on CPU (--quantization int4, fallback; slower per forward)

@@ -1,0 +1,148 @@
+{
+  "metrics": {
+    "qdr": {
+      "label": "QDR (image->last)",
+      "n": 150,
+      "base_median": 5.356351447894791,
+      "new_median": 4.154522398546157,
+      "p_raw": 0.006434126976299522,
+      "rank_biserial": -0.18195555555555565,
+      "cliffs_delta": 0.18195555555555556,
+      "test": "mann_whitney",
+      "p_holm": 0.032170634881497615
+    },
+    "image_entry_layer": {
+      "label": "Image entry layer",
+      "n": 150,
+      "base_median": 11.0,
+      "new_median": 11.0,
+      "p_raw": 0.4337343338986576,
+      "rank_biserial": 0.05195555555555553,
+      "cliffs_delta": -0.05195555555555555,
+      "test": "mann_whitney",
+      "p_holm": 0.8637057914321696
+    },
+    "image_entry_depth": {
+      "label": "Image entry depth",
+      "n": 150,
+      "base_median": 0.3235294117647059,
+      "new_median": 0.3235294117647059,
+      "p_raw": 0.4337343338986576,
+      "rank_biserial": 0.05195555555555553,
+      "cliffs_delta": -0.05195555555555555,
+      "test": "mann_whitney",
+      "p_holm": 0.8637057914321696,
+      "redundant_with": "image_entry_layer"
+    },
+    "image_peak_layer": {
+      "label": "Image peak layer",
+      "n": 150,
+      "base_median": 17.0,
+      "new_median": 17.0,
+      "p_raw": 0.038608290440523566,
+      "rank_biserial": 0.13493333333333335,
+      "cliffs_delta": -0.13493333333333332,
+      "test": "mann_whitney",
+      "p_holm": 0.148447492481001
+    },
+    "if_auc": {
+      "label": "IF AUC (image->last)",
+      "n": 150,
+      "base_median": 0.001375,
+      "new_median": 0.0008539999999999999,
+      "p_raw": 0.03711187312025025,
+      "rank_biserial": -0.1392,
+      "cliffs_delta": 0.1392,
+      "test": "mann_whitney",
+      "p_holm": 0.148447492481001
+    },
+    "if_gini": {
+      "label": "IF Gini (image->last)",
+      "n": 150,
+      "base_median": 0.69735,
+      "new_median": 0.6847000000000001,
+      "p_raw": 0.4318528957160848,
+      "rank_biserial": -0.05248888888888881,
+      "cliffs_delta": 0.05248888888888889,
+      "test": "mann_whitney",
+      "p_holm": 0.8637057914321696
+    },
+    "first_token_entropy": {
+      "label": "First-token entropy",
+      "n": 150,
+      "base_median": 0.5046,
+      "new_median": 0.09195,
+      "p_raw": 3.02867682338266e-12,
+      "rank_biserial": -0.46586666666666665,
+      "cliffs_delta": 0.46586666666666665,
+      "test": "mann_whitney",
+      "p_holm": 2.422941458706128e-11
+    },
+    "answer_confidence": {
+      "label": "Mean answer log-prob",
+      "n": 150,
+      "base_median": -0.17617850000000002,
+      "new_median": -0.24172549999999998,
+      "p_raw": 3.038181882477369e-14,
+      "rank_biserial": -0.5072888888888889,
+      "cliffs_delta": 0.5072888888888889,
+      "test": "mann_whitney",
+      "p_holm": 2.734363694229632e-13
+    },
+    "answer_perplexity": {
+      "label": "Answer perplexity",
+      "n": 150,
+      "base_median": 1.19265,
+      "new_median": 1.27345,
+      "p_raw": 2.9913863047082205e-14,
+      "rank_biserial": 0.5074222222222222,
+      "cliffs_delta": -0.5074222222222222,
+      "test": "mann_whitney",
+      "p_holm": 2.734363694229632e-13,
+      "redundant_with": "answer_confidence"
+    },
+    "closed_margin": {
+      "label": "Closed yes/no logit margin",
+      "n": 79,
+      "base_median": 11.250001,
+      "new_median": 7.749963,
+      "p_raw": 0.0043739983724672225,
+      "rank_biserial": -0.26261817016503763,
+      "cliffs_delta": 0.26261817016503763,
+      "test": "mann_whitney",
+      "p_holm": 0.026243990234803335
+    },
+    "closed_accuracy": {
+      "label": "Closed yes/no accuracy",
+      "n": 79,
+      "base_median": 0.4430379746835443,
+      "new_median": 0.7721518987341772,
+      "base_counts": [
+        35,
+        44
+      ],
+      "new_counts": [
+        61,
+        18
+      ],
+      "p_raw": 3.865593297582678e-05,
+      "rank_biserial": null,
+      "cliffs_delta": null,
+      "test": "fisher_exact",
+      "p_holm": 0.00027059153083078746
+    }
+  },
+  "family_size_declared": 11,
+  "family_size_distinct": 9,
+  "n_distinct_surviving": 5,
+  "redundant_pairs": {
+    "answer_perplexity": "answer_confidence",
+    "image_entry_depth": "image_entry_layer"
+  },
+  "meta": {
+    "base_dir": "outputs_gemma_confirm",
+    "new_dir": "outputs_medgemma_confirm",
+    "base_label": "Gemma",
+    "new_label": "MedGemma"
+  }
+}

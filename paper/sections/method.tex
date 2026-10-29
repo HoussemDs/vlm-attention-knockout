@@ -1,0 +1,76 @@
+\subsection{Causal Attention Knockout}
+
+Our probing mechanism is the attention knockout of \citet{geva2023dissecting}, in the
+per-layer cross-modal form introduced for multimodal LLMs by
+\citet{zhang2025crossmodal}; we restate it here for completeness and to fix notation.
+
+Let $\mathbf{x} = (x_1, \dots, x_T)$ be the full token sequence (prompt + generated
+answer) and let $p_\theta(x_t \mid x_{<t})$ be the model's next-token probability
+under full attention. For a generated answer of length $L$ starting at position $s$,
+we define the \textbf{sequence-level probability} as the geometric mean:
+\[
+  P_\text{full} = \exp\!\left(\frac{1}{L}\sum_{t=s}^{s+L-1} \log p_\theta(x_t \mid x_{<t})\right).
+\]
+
+For a given \emph{block type} $b$ (e.g., image$\to$answer) and a layer window
+$[l, l+K)$, we construct a modified attention mask $M^{(b,l)}$ that sets the
+corresponding query-key attention scores to $-\infty$ within those layers, zeroing
+out those attention weights in the softmax. The blocked probability $P_b^{(l)}$ is
+computed via a single forward pass with $M^{(b,l)}$.
+
+The \textbf{per-layer information flow} is:
+\[
+  \text{IF}(l; b) = P_\text{full} - P_b^{(l)}.
+\]
+A large positive value means the pathway is causal at that layer. We set $K=1$
+(single-layer windows) so every decoder layer is probed independently.
+
+\subsection{Block Types}
+
+We study two pathways:
+\begin{itemize}
+  \item \textbf{\texttt{image\_to\_last}}: blocks attention from all image tokens to
+        the answer tokens, measuring how much visual information drives the answer.
+  \item \textbf{\texttt{question\_to\_last}}: blocks attention from all question
+        tokens to the answer tokens, measuring question-text influence.
+\end{itemize}
+The \texttt{full\_attention} control (no blocking) always yields $\text{IF}=0$ by
+construction, validating the implementation.
+
+\subsection{Derived Metrics}
+
+\paragraph{Image entry layer.}
+\[
+  l^* = \min\left\{l : \text{IF}(l;\,\texttt{image\_to\_last}) \geq 0.5\cdot
+  \max_{l'} \text{IF}(l';\,\texttt{image\_to\_last})\right\}.
+\]
+This is the first decoder layer where image information contributes at least half its
+peak influence. Lower $l^*$ means the model starts integrating visual evidence earlier.
+
+\paragraph{Question dominance ratio (QDR).}
+\[
+  \text{QDR} = \frac{\bar{\text{IF}}^+(\texttt{question\_to\_last})}
+                    {\bar{\text{IF}}^+(\texttt{image\_to\_last}) + \epsilon},
+\]
+where $\bar{\text{IF}}^+ = \frac{1}{N}\sum_l \max(\text{IF}(l;\cdot), 0)$.
+QDR $> 1$ indicates the model leans more on question text; QDR close to 1 indicates
+balanced reliance on both modalities.
+
+\paragraph{Note on absolute vs.\ relative flow.} IF is defined as an \emph{absolute}
+drop in sequence probability ($P_\text{full} - P_b^{(l)}$), so a model with higher
+baseline confidence can show larger IF for the same proportional reliance. The QDR is a
+ratio of two such quantities \emph{within the same model}, which cancels that model's
+baseline and makes the across-model QDR comparison robust to it; the IF AUC and
+entry-layer metrics are not normalised this way, and we report them as absolute flow.
+We also checked the normalised variant (IF divided by $P_\text{full}$, pooled $n{=}250$, descriptive only):
+MedGemma's mean normalised flow is about 0.6 times Gemma's in both pathways (image
+0.0011 vs.\ 0.0018; question 0.0079 vs.\ 0.0131).
+
+\subsection{Implementation}
+
+The probe is implemented as standard PyTorch \texttt{forward\_pre\_hook}s on each
+decoder layer's self-attention module. The hook intercepts the attention mask argument
+and applies the block pattern. This makes the framework architecture-agnostic: any
+HuggingFace \texttt{AutoModelForImageTextToText} model is supported without
+modification. The implementation and the numeric per-layer information-flow exports are
+released with the paper (see Section~\ref{sec:conclusion} for the repository).

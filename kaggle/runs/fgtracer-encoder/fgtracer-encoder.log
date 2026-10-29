@@ -1,0 +1,178 @@
+[{"stream_name":"stderr","time":6.968838065,"data":"/usr/local/lib/python3.13/dist-packages/nbformat/validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.9688823840000005,"data":"  _validate(nbdict, ref, version, version_minor, relax_add_props)\n"}
+,{"stream_name":"stderr","time":7.949207205,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.949236869,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.949243769,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.949251044,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.586179543,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.586220961,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.586225819,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.58622934,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":27.330417907,"data":"\u001b[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.\r\n"}
+,{"stream_name":"stdout","time":27.330443917,"data":"gradio 6.26.0 requires huggingface-hub\u003c2.0,\u003e=1.16.0, but you have huggingface-hub 0.36.2 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":27.330449291,"data":"gradio 6.26.0 requires pillow\u003c13.0,\u003e=8.0, but you have pillow 13.0.0 which is incompatible.\r\n"}
+,{"stream_name":"stdout","time":27.330455332,"data":"diffusers 0.40.0 requires huggingface-hub\u003c2.0,\u003e=1.23.0, but you have huggingface-hub 0.36.2 which is incompatible.\u001b[0m\u001b[31m\r\n"}
+,{"stream_name":"stdout","time":27.683645679,"data":"\u001b[0mNote: you may need to restart the kernel to use updated packages.\n"}
+,{"stream_name":"stdout","time":45.394156237,"data":"deps OK | transformers 4.56.2 | torch 2.11.0+cu128 | GPUs 2\n"}
+,{"stream_name":"stdout","time":72.030416035,"data":"code ready: ['__notebook__.ipynb', 'analysis', 'compare_models.py', 'fgtracer', 'log_to_trackers.py', 'merge_outputs.py', 'reeval_accuracy.py', 'run_tracing.py']\n"}
+,{"stream_name":"stdout","time":72.274301195,"data":"HF token loaded | W\u0026B skipped (Connection error trying to communicate with service.)\n"}
+,{"stream_name":"stderr","time":87.540185373,"data":"\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\n"}
+,{"stream_name":"stderr","time":87.670019088,"data":"\rGenerating train split:   0%|          | 0/1793 [00:00\u003c?, ? examples/s]\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3228.91 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5390.77 examples/s]\n"}
+,{"stream_name":"stderr","time":87.721148577,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 8941.47 examples/s]\n"}
+,{"stream_name":"stderr","time":87.84974128100001,"data":"\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3228.91 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5390.77 examples/s]\n"}
+,{"stream_name":"stderr","time":87.849767419,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 8941.47 examples/s]\n"}
+,{"stream_name":"stderr","time":87.84977266,"data":"\n"}
+,{"stream_name":"stderr","time":87.849776159,"data":"\rGenerating train split:  56%|█████▌    | 1000/1793 [00:00\u003c00:00, 3228.91 examples/s]\rGenerating train split: 100%|██████████| 1793/1793 [00:00\u003c00:00, 5390.77 examples/s]\n"}
+,{"stream_name":"stderr","time":87.84978047,"data":"\rGenerating test split:   0%|          | 0/451 [00:00\u003c?, ? examples/s]\rGenerating test split: 100%|██████████| 451/451 [00:00\u003c00:00, 8941.47 examples/s]\n"}
+,{"stream_name":"stderr","time":99.619180079,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":99.821491246,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":99.821521192,"data":"\n"}
+,{"stream_name":"stderr","time":99.821530548,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":103.672858531,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":104.972676203,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.30s/it]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.30s/it]\n"}
+,{"stream_name":"stderr","time":105.238770676,"data":"\rLoading checkpoint shards:  50%|█████     | 1/2 [00:01\u003c00:01,  1.30s/it]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.23it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.13it/s]\n"}
+,{"stream_name":"stderr","time":105.439578646,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.23it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.13it/s]\n"}
+,{"stream_name":"stderr","time":105.439610708,"data":"\n"}
+,{"stream_name":"stderr","time":105.439614849,"data":"\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.23it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:01\u003c00:00,  1.13it/s]\n"}
+,{"stream_name":"stderr","time":171.928175849,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":171.928231264,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":171.928235738,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stderr","time":172.132590416,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":172.132619896,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":172.132623396,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stderr","time":172.132625978,"data":"\n"}
+,{"stream_name":"stderr","time":172.132628386,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":172.132631041,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":172.132633584,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stdout","time":662.680903764,"data":"[deep_xai:gemma] ok=100/100 norm=True attn=True form_frac=0.7794117647058824\n"}
+,{"stream_name":"stdout","time":662.88576702,"data":"[deep_xai:gemma] ok=100/100 norm=True attn=True form_frac=0.7794117647058824\n"}
+,{"stream_name":"stderr","time":691.35921549,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":691.56130812,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":691.561333501,"data":"\n"}
+,{"stream_name":"stderr","time":691.561337417,"data":"Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.\n"}
+,{"stream_name":"stderr","time":697.824223466,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":727.834012485,"data":"\rFetching 2 files:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rFetching 2 files:  50%|█████     | 1/2 [00:30\u003c00:30, 30.21s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:30\u003c00:00, 15.11s/it]\n"}
+,{"stream_name":"stderr","time":728.041513453,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:30\u003c00:30, 30.21s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:30\u003c00:00, 15.11s/it]\n"}
+,{"stream_name":"stderr","time":728.041570723,"data":"\n"}
+,{"stream_name":"stderr","time":728.041580317,"data":"\rFetching 2 files:  50%|█████     | 1/2 [00:30\u003c00:30, 30.21s/it]\rFetching 2 files: 100%|██████████| 2/2 [00:30\u003c00:00, 15.11s/it]\n"}
+,{"stream_name":"stderr","time":741.318037654,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:00\u003c00:00,  8.69it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:00\u003c00:00, 12.87it/s]\n"}
+,{"stream_name":"stderr","time":741.364996284,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:00\u003c00:00,  8.69it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:00\u003c00:00, 12.87it/s]\n"}
+,{"stream_name":"stderr","time":741.365028632,"data":"\n"}
+,{"stream_name":"stderr","time":741.365034318,"data":"\rLoading checkpoint shards:   0%|          | 0/2 [00:00\u003c?, ?it/s]\rLoading checkpoint shards:  50%|█████     | 1/2 [00:00\u003c00:00,  8.69it/s]\rLoading checkpoint shards: 100%|██████████| 2/2 [00:00\u003c00:00, 12.87it/s]\n"}
+,{"stream_name":"stderr","time":748.850775831,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":748.850836882,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":748.850842788,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stderr","time":749.053279376,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":749.053314002,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":749.053319766,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stderr","time":749.053323483,"data":"\n"}
+,{"stream_name":"stderr","time":749.05332701,"data":"/kaggle/working/analysis/deep_xai.py:149: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.\n"}
+,{"stream_name":"stderr","time":749.053331016,"data":"Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)\n"}
+,{"stream_name":"stderr","time":749.053335078,"data":"  lp_layers.append(float(logp[answer_tok]))\n"}
+,{"stream_name":"stdout","time":1240.276277112,"data":"[deep_xai:medgemma] ok=100/100 norm=True attn=True form_frac=0.7420588235294119\n"}
+,{"stream_name":"stdout","time":1240.482261618,"data":"[deep_xai:medgemma] ok=100/100 norm=True attn=True form_frac=0.7420588235294119\n"}
+,{"stream_name":"stdout","time":1251.79985998,"data":"[deep_xai:combine] CKA=0.1553 cos=0.3335\n"}
+,{"stream_name":"stdout","time":1251.799911013,"data":"[deep_xai:combine] layerwise CKA min=0.091 @layer 11\n"}
+,{"stream_name":"stdout","time":1251.799917242,"data":"[deep_xai:combine] divergence={'n': 100, 'kl_base_to_medical_nats': 2.771365165710449, 'jensen_shannon_nats': 0.21208062767982483, 'note': 'first-answer-token distribution shift from fine-tuning'}\n"}
+,{"stream_name":"stdout","time":1252.005570022,"data":"[deep_xai:combine] CKA=0.1553 cos=0.3335\n"}
+,{"stream_name":"stdout","time":1252.005607122,"data":"[deep_xai:combine] layerwise CKA min=0.091 @layer 11\n"}
+,{"stream_name":"stdout","time":1252.005612336,"data":"[deep_xai:combine] divergence={'n': 100, 'kl_base_to_medical_nats': 2.771365165710449, 'jensen_shannon_nats': 0.21208062767982483, 'note': 'first-answer-token distribution shift from fine-tuning'}\n"}
+,{"stream_name":"stdout","time":1252.18078069,"data":"=== encoder_probe.json ===\n"}
+,{"stream_name":"stdout","time":1252.180829402,"data":"{\n"}
+,{"stream_name":"stdout","time":1252.180834105,"data":" \"n_samples\": 100,\n"}
+,{"stream_name":"stdout","time":1252.1808366,"data":" \"n_image_tokens\": 256,\n"}
+,{"stream_name":"stdout","time":1252.180838835,"data":" \"hidden_dim\": 2560,\n"}
+,{"stream_name":"stdout","time":1252.180841173,"data":" \"cosine_similarity_mean\": 0.33353856205940247,\n"}
+,{"stream_name":"stdout","time":1252.180843521,"data":" \"cosine_similarity_median\": 0.3266698122024536,\n"}
+,{"stream_name":"stdout","time":1252.180845752,"data":" \"linear_cka\": 0.15530678629875183,\n"}
+,{"stream_name":"stdout","time":1252.180848148,"data":" \"interpretation\": \"cosine/CKA near 1 =\u003e encoders produce near-identical decoder-input features, so the vision encoder cannot explain the QDR shift; lower values bound its share.\"\n"}
+,{"stream_name":"stdout","time":1252.180851101,"data":"}\n"}
+,{"stream_name":"stdout","time":1252.18085322,"data":"=== xai/xai_divergence.json ===\n"}
+,{"stream_name":"stdout","time":1252.180855497,"data":"{\n"}
+,{"stream_name":"stdout","time":1252.180858375,"data":" \"n\": 100,\n"}
+,{"stream_name":"stdout","time":1252.180860618,"data":" \"kl_base_to_medical_nats\": 2.771365165710449,\n"}
+,{"stream_name":"stdout","time":1252.180862978,"data":" \"jensen_shannon_nats\": 0.21208062767982483,\n"}
+,{"stream_name":"stdout","time":1252.180865221,"data":" \"note\": \"first-answer-token distribution shift from fine-tuning\"\n"}
+,{"stream_name":"stdout","time":1252.180867606,"data":"}\n"}
+,{"stream_name":"stdout","time":1252.18086975,"data":"=== xai/xai_gemma.json ===\n"}
+,{"stream_name":"stdout","time":1252.180871989,"data":"{\n"}
+,{"stream_name":"stdout","time":1252.180874071,"data":" \"label\": \"gemma\",\n"}
+,{"stream_name":"stdout","time":1252.180876415,"data":" \"model_dir\": \"/kaggle/input/models/google/gemma-3/transformers/gemma-3-4b-it/1\",\n"}
+,{"stream_name":"stdout","time":1252.18087878,"data":" \"n_samples\": 100,\n"}
+,{"stream_name":"stdout","time":1252.180881063,"data":" \"n_ok\": 100,\n"}
+,{"stream_name":"stdout","time":1252.180883282,"data":" \"lens_applied_final_norm\": true,\n"}
+,{"stream_name":"stdout","time":1252.180885479,"data":" \"attention_available\": true,\n"}
+,{"stream_name":"stdout","time":1252.180887659,"data":" \"curve_lens_answer_logprob\": [\n"}
+,{"stream_name":"stdout","time":1252.180907503,"data":"  -571.6009375,\n"}
+,{"stream_name":"stdout","time":1252.180911264,"data":"  -37.93488075256348,\n"}
+,{"stream_name":"stdout","time":1252.180914979,"data":"  -43.49498462677002,\n"}
+,{"stream_name":"stdout","time":1252.180918529,"data":"  -34.010016422271725,\n"}
+,{"stream_name":"stdout","time":1252.180921715,"data":"  -28.74714811325073,\n"}
+,{"stream_name":"stdout","time":1252.180925014,"data":"  -18.480025081634523,\n"}
+,{"stream_name":"stdout","time":1252.180928692,"data":"  -16.16254800796509,\n"}
+,{"stream_name":"stdout","time":1252.18093232,"data":"  -13.577829484939576,\n"}
+,{"stream_name":"stdout","time":1252.180935883,"data":"  -11.990513591766357,\n"}
+,{"stream_name":"stdout","time":1252.180939782,"data":"  -11.82753010749817,\n"}
+,{"stream_name":"stdout","time":1252.180942908,"data":"  -11.497387762069701,\n"}
+,{"stream_name":"stdout","time":1252.180946112,"data":"  -11.579305715560913,\n"}
+,{"stream_name":"stdout","time":1252.180949458,"data":"  -11.64735779762268,\n"}
+,{"stream_name":"stdout","time":1252.18095291,"data":"  -11.389517116546632,\n"}
+,{"stream_name":"stdout","time":1252.180956591,"data":"  -10.860676918029785,\n"}
+,{"stream_name":"stdout","time":1252.180960085,"data":"  -10.262340745925904,\n"}
+,{"stream_name":"stdout","time":1252.180968868,"data":"  -9.662100162506103,\n"}
+,{"stream_name":"stdout","time":1252.180972126,"data":"  -8.860035676956176,\n"}
+,{"stream_name":"stdout","time":1252.180975259,"data":"  -9.138525309562683,\n"}
+,{"stream_name":"stdout","time":1252.180978514,"data":"  -8.665463190078736,\n"}
+,{"stream_name":"stdout","time":1252.180986881,"data":"  -7.364066426753998,\n"}
+,{"stream_name":"stdout","time":1252.180989576,"data":"  -5.945183632373809,\n"}
+,{"stream_name":"stdout","time":1252.180991811,"data":"  -4.579407762289048,\n"}
+,{"stream_name":"stdout","time":1252.180993983,"data":"  -4.21729884210974,\n"}
+,{"stream_name":"stdout","time":1252.180997014,"data":"  -3.1355383357778193,\n"}
+,{"stream_name":"stdout","time":1252.181012971,"data":"  -3.7181950336\n"}
+,{"stream_name":"stdout","time":1252.181016635,"data":"=== xai/xai_medgemma.json ===\n"}
+,{"stream_name":"stdout","time":1252.181020208,"data":"{\n"}
+,{"stream_name":"stdout","time":1252.181023784,"data":" \"label\": \"medgemma\",\n"}
+,{"stream_name":"stdout","time":1252.181027485,"data":" \"model_dir\": \"google/medgemma-4b-it\",\n"}
+,{"stream_name":"stdout","time":1252.181030914,"data":" \"n_samples\": 100,\n"}
+,{"stream_name":"stdout","time":1252.181034719,"data":" \"n_ok\": 100,\n"}
+,{"stream_name":"stdout","time":1252.181038666,"data":" \"lens_applied_final_norm\": true,\n"}
+,{"stream_name":"stdout","time":1252.18104201,"data":" \"attention_available\": true,\n"}
+,{"stream_name":"stdout","time":1252.181045323,"data":" \"curve_lens_answer_logprob\": [\n"}
+,{"stream_name":"stdout","time":1252.181048653,"data":"  -561.005625,\n"}
+,{"stream_name":"stdout","time":1252.181051856,"data":"  -35.30167289733887,\n"}
+,{"stream_name":"stdout","time":1252.181055106,"data":"  -38.982414169311525,\n"}
+,{"stream_name":"stdout","time":1252.181058303,"data":"  -34.08967998504639,\n"}
+,{"stream_name":"stdout","time":1252.181061438,"data":"  -31.78797424316406,\n"}
+,{"stream_name":"stdout","time":1252.181069196,"data":"  -18.898594913482665,\n"}
+,{"stream_name":"stdout","time":1252.181072441,"data":"  -17.544404182434082,\n"}
+,{"stream_name":"stdout","time":1252.181074716,"data":"  -14.678986196517945,\n"}
+,{"stream_name":"stdout","time":1252.18107687,"data":"  -11.861666860580444,\n"}
+,{"stream_name":"stdout","time":1252.181078998,"data":"  -11.547681350708007,\n"}
+,{"stream_name":"stdout","time":1252.181081164,"data":"  -11.23539053916931,\n"}
+,{"stream_name":"stdout","time":1252.181083397,"data":"  -11.26445215702057,\n"}
+,{"stream_name":"stdout","time":1252.181090314,"data":"  -11.366672534942627,\n"}
+,{"stream_name":"stdout","time":1252.181092582,"data":"  -11.077357330322265,\n"}
+,{"stream_name":"stdout","time":1252.181094716,"data":"  -10.761293392181397,\n"}
+,{"stream_name":"stdout","time":1252.181096953,"data":"  -10.472517671585083,\n"}
+,{"stream_name":"stdout","time":1252.181099156,"data":"  -10.092195949554444,\n"}
+,{"stream_name":"stdout","time":1252.181103187,"data":"  -8.98737606048584,\n"}
+,{"stream_name":"stdout","time":1252.181117841,"data":"  -9.0827672290802,\n"}
+,{"stream_name":"stdout","time":1252.181121578,"data":"  -8.521354684829712,\n"}
+,{"stream_name":"stdout","time":1252.18112529,"data":"  -7.02426707983017,\n"}
+,{"stream_name":"stdout","time":1252.18112914,"data":"  -5.51997474193573,\n"}
+,{"stream_name":"stdout","time":1252.181132864,"data":"  -4.295342997312546,\n"}
+,{"stream_name":"stdout","time":1252.181136609,"data":"  -4.709117819517851,\n"}
+,{"stream_name":"stdout","time":1252.18113977,"data":"  -3.653899298608303,\n"}
+,{"stream_name":"stdout","time":1252.181147583,"data":"  -4.182905435562134,\n"}
+,{"stream_name":"stdout","time":1252.181150842,"data":"  -0.6303808658570051,\n"}
+,{"stream_name":"stdout","time":1252.181154071,"data":"  -0.699663949\n"}
+,{"stream_name":"stdout","time":1253.981482538,"data":"W\u0026B logging skipped (No API key configured. Use `wandb login` to log in.)\n"}
+,{"stream_name":"stderr","time":1259.830947647,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1259.830991234,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1259.997201611,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1259.99722838,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1260.768795624,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1260.846422122,"data":"[NbConvertApp] Writing 18996 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1263.33241109,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1263.853595932,"data":"[NbConvertApp] Writing 306666 bytes to __results__.html\n"}
+]

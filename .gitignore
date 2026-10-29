@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual envs
+.venv/
+.track-venv/
+
+# Large model outputs (tracked via W&B artifacts instead)
+outputs_gemma_fixed/
+outputs_medgemma_fixed/
+outputs_*/
+kaggle/raw_output/
+results_extracted/
+
+# Archives
+*.zip
+
+# W&B + MLflow local cache
+wandb/
+mlruns/
+*.log
+
+# Kaggle session logs
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Obsidian notes app settings (not research files)
+.obsidian/
+
+# Compiled PDF (regenerated from LaTeX source)
+paper/main.pdf
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Secrets (never commit)
+.env
+*.netrc
+
+# large regenerable artifacts (keep out of git)
+results_bundle.zip
+figures_compare_fixed/xai/*.npy
+
+# latex build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.xdv
+
+# Kaggle run logs are kept as evidence of the runs
+!kaggle/runs/**/*.log

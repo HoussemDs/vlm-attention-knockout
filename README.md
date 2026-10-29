@@ -161,6 +161,14 @@ included.
 | `LICENSE` | MIT licence for the code |
 | `.gitignore` | Excludes run outputs, virtualenvs, caches and the compiled PDF |
 
+## Kaggle runs and timestamps
+
+The GPU runs behind every number in the paper were done on Kaggle. To check them:
+
+- [`kaggle/README.md`](kaggle/README.md): the kernel versions, with links to each Kaggle version.
+- [`kaggle/runs/README.md`](kaggle/runs/README.md): which run is which, the sample ranges, and the wall-clock time of each run from its log.
+- `kaggle/runs/*/`: the notebook, kernel metadata and full log of each run, with the timestamps.
+
 ## Paper
 
 The paper source is in `paper/`. Build it with a standard LaTeX toolchain:
